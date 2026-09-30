@@ -1,0 +1,2 @@
+npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/output.css --watch
+npm run build:watch

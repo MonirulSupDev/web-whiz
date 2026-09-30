@@ -1,0 +1,1448 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore our professional web development services, portfolio, and latest projects." />
+    <title>web-whiz</title>
+    <link rel="shortcut icon" href="src/img/fav/fav-02.png" type="image/x-icon" />
+
+    <!-- Remixicon icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" media="print"
+        onload="this.media = 'all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    </noscript>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" media="print"
+        onload="this.media = 'all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    </noscript>
+
+    <!-- Fancybox popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css" media="print"
+        onload="this.media = 'all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css" />
+    </noscript>
+
+    <link rel="preload" as="image" href="/src/img/bg/transparent-bg.png" fetchpriority="high" />
+    <link rel="preload" as="image" href="/src/img/bg/hero-bg-01.jpg" fetchpriority="high" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="relative">
+    <div
+        class="absolute inset-0 bg-[url('/src/img/bg/transparent-bg.png')] bg-repeat bg-auto bg-center opacity-5 -z-10">
+    </div>
+    <!-- Preloader..... -->
+    <div id="pageLoader"
+        class="fixed inset-0 z-9999 flex flex-col items-center justify-center gap-4 bg-gray-700 transition-opacity duration-500">
+        <!-- Logo -->
+        <h2 class="text-2xl font-bold text-gray-200 flex items-center gap-3">
+            <img src="src/img/fav/webwhiz.png" alt="loader logo" /> WebWhiz
+        </h2>
+        <!-- Loader -->
+        <div class="loader"></div>
+    </div>
+
+    <div class="page-container relative mx-auto border-black/10">
+        <!-- Vertical lines -->
+        <div class="pointer-events-none absolute inset-0 grid grid-cols-8 -z-10">
+            <div class="border-r border-black/8 mr-8.5 md:mr-[81%] lg:mr-[36%] 2xl:mr-[9%] 3xl:mr-[18%] fhd:mr-[-12%]">
+            </div>
+            <div></div>
+            <div></div>
+            <div class="md:border-r md:border-black/8"></div>
+            <div></div>
+            <div></div>
+            <div
+                class="border-r border-black/8 -mr-8.5 md:mr-[-81%] lg:mr-[-36%] 2xl:mr-[-9%] 3xl:mr-[-24%] fhd:mr-[12%]">
+            </div>
+            <div></div>
+        </div>
+
+        <!-- Header start -->
+        <header id="header">
+            <div id="sticky-header"
+                class="fixed top-0 left-0 right-0 fhd:px-37 3xl:max-w-full 3xl:px-12.5 2xl:max-w-372.5 mx-auto flex justify-between px-2 md:px-8 items-cente text-white py-4 md:py-4.75 lg:py-8.25 z-20">
+                <div class="min-w-28.5 md:w-1/10 flex items-center">
+                    <a href="#"><img src="src/img/logo/logo.png" alt="Website logo" /></a>
+                </div>
+                <div class="header-menu w-full lg:pl-9 2xl:pl-21 2xl:pr-15 hidden lg:flex flex-col justify-center">
+                    <nav>
+                        <ul class="list-none flex justify-between manrope-fnt text-sm font-medium text-white/60">
+                            <li>
+                                <ul class="list-none flex gap-7">
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition"
+                                            href="portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="#about">About us</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-none flex gap-7">
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="#services">Services</a>
+                                    </li>
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition"
+                                            href="#testimonial">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="blog.html">Blog</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="w-1/10 flex justify-end">
+                    <button id="offcanvasBtn" aria-label="Offcanvas button"
+                        class="border border-white/8 rounded-[200px] p-2.5 text-white hover:text-primary transition">
+                        <svg aria-hidden="true" width="18" height="12" viewBox="0 0 18 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 0.75H17.25M0.75 6H17.25M9 11.25H17.25" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Offcanvas start -->
+        <!-- Overlay -->
+        <div id="overlay" class="fixed inset-0 z-40 hidden bg-black/50"></div>
+
+        <!-- Offcanvas -->
+        <div id="offcanvas"
+            class="fixed top-0 right-0 z-50 h-screen w-80 translate-x-full bg-[#171717] shadow-2xl transition-transform duration-300 ease-in-out">
+            <!-- Offcanvas Header -->
+            <div class="flex items-center justify-between border-b border-b-white/50 p-5">
+                <a href="#"><img src="src/img/logo/logo.png" alt="Logo" /></a>
+
+                <button id="closeBtn" class="text-2xl leading-none text-white hover:text-red-500"
+                    aria-label="Close button">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+
+            <!-- Offcanvas Content -->
+            <div class="mt-9 px-6 hidden lg:block">
+                <h2 class="text-2xl font-bold text-center text-white mb-4">
+                    Hello there...
+                </h2>
+                <h3 class="text-4xl font-bold text-center text-white tracking-widest">
+                    Welcome!
+                </h3>
+                <div class="grid grid-cols-2 gap-4 mt-10">
+                    <img class="w-32 h-25 object-cover" src="src/img/gallery/blog-01.jpg" alt="Gallery image" />
+                    <img class="w-32 h-25 object-cover" src="src/img/gallery/blog-02.jpg" alt="Gallery image" />
+                    <img class="w-32 h-25 object-cover" src="src/img/gallery/blog-03.jpg" alt="Gallery image" />
+                    <img class="w-32 h-25 object-cover" src="src/img/gallery/blog-04.jpg" alt="Gallery image" />
+                </div>
+                <p class="text-white mt-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                    architecto ab aliquam voluptatem cum veritatis!
+                </p>
+            </div>
+            <nav class="p-5 lg:hidden">
+                <ul class="space-y-3 text-white">
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="#service">Services</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="#testimonial">Testimonials</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Offcanvas end -->
+
+        <main class="relative z-10">
+            <!-- Hero section start -->
+            <section class="hero-section relative bg-cover pt-32 fhd:pt-37.5 pb-20 fhd:pb-45 md:pb-35"
+                data-bg-img="src/img/bg/hero-bg-01.jpg">
+                <!-- Vertical lines -->
+                <div class="hidden pointer-events-none absolute inset-0 md:grid md:grid-cols-8">
+                    <div
+                        class="border-r border-white/8 -mr-8 md:mr-[81%] lg:mr-[36%] 2xl:mr-[9%] 3xl:mr-[18%] fhd:mr-[-12%]">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="border-r border-white/8"></div>
+                    <div></div>
+                    <div></div>
+                    <div
+                        class="border-r border-white/8 mr-6 md:mr-[-81%] lg:mr-[-36%] 2xl:mr-[-9%] 3xl:mr-[-24%] fhd:mr-[12%]">
+                    </div>
+                    <div></div>
+                </div>
+                <!-- Horizontal line -->
+                <div class="pointer-events-none absolute inset-0 h-17 md:h-18 lg:h-25 border-b border-b-white/8"></div>
+                <div
+                    class="pointer-events-none absolute inset-0 md:h-170 lg:h-180 xl:h-195 2xl:h-219 fhd:h-231.5 md:border-b border-b-white/8">
+                </div>
+
+                <div
+                    class="hero-left text-[#4D4D4D] hidden absolute lg:flex items-center w-full right-[43%] lg:right-[46%] fhd:right-[43%] top-[-34%] lg:top-[3%] 2xl:top-[-16%] fhd:top-[-36%] rotate-270 pointer-events-none">
+                    <div class="uppercase text-sm mr-34.5">Scroll Down</div>
+                    <div class="text-[52px] font-bold">0/07</div>
+                </div>
+                <div class="container">
+                    <div class="text-center text-white">
+                        <span
+                            class="uppercase font-medium text-sm bg-white/4 backdrop-blur-xl py-2.5 px-6 rounded-[200px] inline-block mb-3 animate-on-scroll delay-500 duration-500"
+                            data-animation="bounce-in">
+                            Welcome to WebWhiz
+                        </span>
+                        <div class="relative">
+                            <h1
+                                class="font-bold text-[clamp(32px,5.73vw,80px)] leading-[140%] md:leading-[120%] lg:leading-[110%] relative">
+                                Turning Imagination <br />
+                                into
+                                <span class="text-primary inline-block relative">
+                                    Awesome
+                                    <svg class="absolute -bottom-2 w-full" width="365" height="13" viewBox="0 0 365 13"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M364.306 7.43238C362.344 7.35225 360.254 7.40104 358.292 7.32091C317.032 5.9812 275.808 5.19838 234.447 5.44428C171.279 5.62351 108.019 6.48854 45.3176 9.75139C33.613 10.3844 22.1163 11.1026 10.6196 11.8208C8.73817 11.9546 7.19143 12.0447 5.43677 12.0497C3.01268 12.1423 0.968995 11.8482 0.193336 10.265C-0.582323 8.68192 1.10152 7.56313 3.02868 7.08635C5.54415 6.30798 8.26754 5.6147 11.1531 5.34944C19.2673 4.51233 27.7162 3.63144 35.8658 3.35123C128.235 -0.424256 220.365 -1.58543 313.057 2.90753C328.965 3.63363 344.782 5.04553 360.645 6.11453C361.938 6.28224 363.231 6.44997 364.317 6.53258C364.398 6.74658 364.352 7.08948 364.306 7.43238Z"
+                                            fill="#94E00D" />
+                                    </svg>
+                                </span>
+                                <svg class="hidden md:absolute top-[0%] right-[22%]" width="45" height="45"
+                                    viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.8177 21.9442C10.0049 19.463 10.2402 18.0298 11.6199 17.0779C14.561 15.0565 14.8712 13.5699 13.1386 9.84797C11.8124 7.00305 11.6627 5.89077 12.4541 4.47901C13.5236 2.55387 10.529 3.45231 9.85521 5.55926C9.36323 7.09937 9.53431 8.08328 10.7108 10.3934C12.5183 13.9549 12.4327 15.0245 10.2509 16.4576C7.61988 18.1688 7.09581 20.34 8.56105 23.3453C9.29902 24.8961 11.5878 24.3186 10.8177 21.9442Z"
+                                        fill="#94E00D" />
+                                    <path
+                                        d="M23.844 18.0085C23.6835 18.447 23.5017 19.5058 23.4376 20.34C23.2771 22.6395 23.1167 22.8427 21.3734 23.0245C18.1114 23.356 15.459 25.8801 15.8547 28.2865C16.1755 30.34 17.844 29.9336 17.983 27.7625C18.1327 25.4523 18.86 24.6181 20.9777 24.3614C24.2611 23.9657 25.7049 22.5432 25.844 19.602C25.9616 17.0245 26.4429 16.3293 27.9295 16.5753C29.2343 16.7892 30.9456 16.0192 30.3894 15.463C29.0311 14.0833 24.6461 15.7946 23.844 18.0085Z"
+                                        fill="#94E00D" />
+                                    <path
+                                        d="M33.1709 31.0564C31.9516 32.2756 31.973 32.2756 30.3474 31.3131C27.5773 29.6767 23.7056 30.7248 22.2618 33.4949C20.9784 35.9548 23.2564 35.4521 24.0372 33.8799C25.0746 31.8157 26.3794 31.4735 28.3794 32.7248C30.1228 33.8264 31.7805 33.7943 33.5452 32.5858C34.2832 32.0831 34.85 31.5163 35.4383 30.9066C36.6789 29.6446 37.5238 30.3612 38.6896 31.5697C40.7752 33.7409 42.9249 32.4681 40.8714 30.3505C38.604 28.0189 35.9623 28.2649 33.1709 31.0564Z"
+                                        fill="#94E00D" />
+                                </svg>
+                            </h1>
+                            <p
+                                class="hidden md:block md:text-xs xl:text-sm fhd:text-lg md:leading-[160%] text-old-silver text-left absolute md:left-[4%] lg:left-[11%] xl:left-[10%] 3xl:left-[15%] fhd:left-[11%] bottom-[4%] xl:bottom-[6%]">
+                                Passion for Creativity, Making <br />
+                                Extraordinary Happen
+                            </p>
+                            <p
+                                class="hidden md:block md:text-xs xl:text-sm fhd:text-lg md:leading-[160%] text-old-silver text-left absolute bottom-[-64%] 3xl:bottom-[-59%] fhd:bottom-[-73%] md:right-[5%] lg:right-[12%] xl:right-[12%] 3xl:right-[17%] fhd:right-[12%]">
+                                Where Imagination Meets <br />
+                                Ambition, Miracles Happen, and <br />
+                                Success is Unleashed.
+                            </p>
+                            <p class="md:hidden text-base text-old-silver leading-[160%] mt-5">
+                                Passion for Creativity , Making Extraordinary Happen where
+                                imagination meets ambition miracles happen
+                            </p>
+                        </div>
+                        <a href="#" aria-label="Explore button"
+                            class="w-full sm:w-fit inline-flex justify-center items-center gap-4 text-base font-semibold bg-[#171717] backdrop-blur-xl border border-white hover:border-primary hover:bg-primary hover:text-black rounded-[150px] py-3.25 px-6.5 fhd:px-7.5 fhd:py-[14.6px] mt-11.5 fhd:mt-15 group transition duration-300 animate-float">
+                            Explore Now
+                            <svg class="group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                                width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 14.75L14.75 0.75M14.75 11.25V0.75H4.25" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="hero-image flex flex-col items-center md:flex-row md:justify-between gap-6 md:gap-23 fhd:gap-43.5 md:px-15 lg:px-30 fhd:px-42.75 mt-13 fhd:mt-13.75 relative">
+                        <svg class="hero-bg-shape hidden md:block size-full absolute left-2/4 -translate-x-2/4 bottom-0"
+                            width="488" height="313" viewBox="0 0 488 313" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="488" height="313" rx="156.5" fill="white" fill-opacity="0.02" />
+                        </svg>
+                        <div class="rounded-[200px] p-1 border border-white/8 sm:w-fit">
+                            <img class="rounded-[200px] w-full animate-on-scroll delay-500 duration-500"
+                                data-animation="slide-in-right" src="src/img/hero/hero-img-01-01.jpg"
+                                alt="Hero image 01" />
+                        </div>
+                        <div class="rounded-[200px] p-1 border border-white/8 sm:w-fit">
+                            <img class="rounded-[200px] w-full animate-on-scroll delay-500 duration-500"
+                                data-animation="slide-in-left" src="src/img/hero/hero-img-01-02.jpg"
+                                alt="Hero image 02" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero section end -->
+
+            <!-- Project section start -->
+            <section class="project-section relative py-12 md:py-20 lg:py-30 fhd:pt-35.75 fhd:pb-40 overflow-hidden">
+                <!-- Horizontal line -->
+                <div class="pointer-events-none absolute inset-0 md:h-15 lg:h-22 fhd:h-30 md:border-b border-b-black/8">
+                </div>
+                <div
+                    class="pointer-events-none absolute inset-0 md:h-147 lg:h-180 xl:h-195 2xl:h-210.75 3xl:h-239.25 fhd:h-260 md:border-b border-b-black/8">
+                </div>
+
+                <h2
+                    class="hidden 3xl:block absolute left-[-4%] 3xl:left-[-11%] fhd:left-[-5%] 3xl:top-[43%] fhd:top-[52%] translate-y-[-50%] rotate-270 3xl:text-[75px] fhd:text-[90px] font-bold text-transparent [-webkit-text-stroke:1px_#e5e5e5] pointer-events-none">
+                    PORTFOLIO
+                </h2>
+                <div class="container">
+                    <div class="project-heading grid grid-rows-5 md:grid-rows-1 md:grid-cols-5 items-center">
+                        <div class="row-span-3 md:col-span-3 relative animate-on-scroll duration-600 delay-1000"
+                            data-animation="slide-in-left">
+                            <h2
+                                class="text-center md:text-left text-[clamp(26px,4.17vw,64px)] leading-[140%] md:leading-[110%] font-bold">
+                                Meticulously Shaping <br />
+                                <span class="text-primary">Website</span> Demos
+                            </h2>
+                            <p
+                                class="text-center md:text-left text-base md:text-sm md:leading-[140%] lg:text-base 3xl:text-lg lg:absolute text-old-silver bottom-[2%] lg:bottom-0 3xl:bottom-[5%] right-[6%] lg:right-[-6%] xl:right-[3%] 3xl:right-[6%] leading-[160%] mt-4">
+                                At our company, we craft website demos <br />
+                                with pride, precision, and dedication.
+                            </p>
+                        </div>
+                        <div class="row-span-2 md:col-span-2 flex justify-center md:justify-end">
+                            <a href="portfolio.html" aria-label="Show project button">
+                                <img class="md:w-6/10 lg:w-7/10 2xl:w-8/10 3xl:w-full hover:rotate-360 transition duration-500 animate-on-scroll delay-500"
+                                    data-animation="slide-in-right" src="src/img/project/project-logo.png"
+                                    alt="Project logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="project-wrapper mt-12 fhd:mt-19.5 md:mt-10 -mr-6 lg:-mr-5.75 xl:-mr-25.5 2xl:-mr-41.5 fhd:-mr-58">
+                        <div class="swiper projectSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-img">
+                                            <img src="src/img/project/project-01.webp" alt="Project image 01" />
+                                        </div>
+                                        <div class="project-content flex justify-between mt-4">
+                                            <div class="project-text">
+                                                <h2 class="text-2xl md:text-xl 3xl:text-2xl font-medium">
+                                                    Landing Page Design
+                                                </h2>
+                                                <span class="font-medium text-sm text-old-silver">07/11/2026</span>
+                                            </div>
+                                            <div class="project-button">
+                                                <a href="portfolio-preview.html" aria-label="Project button"
+                                                    class="w-15 flex justify-end group">
+                                                    <svg class="md:size-7.5 xl:size-10 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                                                        width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.5 32.5L30 10" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M10 10H30V30" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-img">
+                                            <img src="src/img/project/project-02.webp" alt="Project image 02" />
+                                        </div>
+                                        <div class="project-content flex justify-between mt-4">
+                                            <div class="project-text">
+                                                <h2 class="text-2xl md:text-xl 3xl:text-2xl font-medium">
+                                                    Website Design
+                                                </h2>
+                                                <span class="font-medium text-sm text-old-silver">03/06/2026</span>
+                                            </div>
+                                            <div class="project-button">
+                                                <a href="portfolio-preview.html" aria-label="Project button"
+                                                    class="w-15 flex justify-end group">
+                                                    <svg class="md:size-7.5 xl:size-10 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                                                        width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.5 32.5L30 10" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M10 10H30V30" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-img">
+                                            <img src="src/img/project/project-03.webp" alt="Project image 03" />
+                                        </div>
+                                        <div class="project-content flex justify-between mt-4">
+                                            <div class="project-text">
+                                                <h2 class="text-2xl md:text-xl 3xl:text-2xl font-medium">
+                                                    Web App Design
+                                                </h2>
+                                                <span class="font-medium text-sm text-old-silver">13/09/2026</span>
+                                            </div>
+                                            <div class="project-button">
+                                                <a href="portfolio-preview.html" aria-label="Project button"
+                                                    class="w-15 flex justify-end group">
+                                                    <svg class="md:size-7.5 xl:size-10 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                                                        width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.5 32.5L30 10" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M10 10H30V30" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-img">
+                                            <img src="src/img/project/project-01.jpg" alt="Project image 01" />
+                                        </div>
+                                        <div class="project-content flex justify-between mt-4">
+                                            <div class="project-text">
+                                                <h2 class="text-2xl md:text-xl 3xl:text-2xl font-medium">
+                                                    Landing Page Design
+                                                </h2>
+                                                <span class="font-medium text-sm text-old-silver">07/11/2026</span>
+                                            </div>
+                                            <div class="project-button">
+                                                <a href="portfolio-preview.html" aria-label="Project button"
+                                                    class="w-15 flex justify-end group">
+                                                    <svg class="md:size-7.5 xl:size-10 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                                                        width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.5 32.5L30 10" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M10 10H30V30" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project section end -->
+
+            <!-- About section start -->
+            <section id="about" class="about-section py-24 overflow-hidden relative"
+                data-bg-img="src/img/bg/hero-bg-01.jpg">
+                <!-- Vertical lines -->
+                <div class="hidden pointer-events-none absolute inset-0 md:grid grid-cols-8">
+                    <div
+                        class="border-r border-white/8 -mr-8 md:mr-[81%] lg:mr-[36%] 2xl:mr-[9%] 3xl:mr-[18%] fhd:mr-[-12%]">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div
+                        class="border-r border-white/8 mr-6 md:mr-[-81%] lg:mr-[-36%] 2xl:mr-[-9%] 3xl:mr-[-24%] fhd:mr-[12%]">
+                    </div>
+                    <div></div>
+                </div>
+                <!-- Decorative background letters -->
+                <span class="bg-letter top-0 left-0">A</span>
+                <span class="bg-letter bottom-0 left-0">B</span>
+                <span class="bg-letter left-1/2 -translate-x-1/2 bottom-[-4%] xl:bottom-[11%] fhd:bottom-[4%]">O</span>
+                <span class="bg-letter top-0 right-0">U</span>
+                <span class="bg-letter bottom-0 right-0">T</span>
+
+                <div class="container text-white">
+                    <div class="section-title text-center mb-13.75 animate-on-scroll delay-300 duration-500"
+                        data-animation="fade-in-up">
+                        <h2 class="font-bold text-[clamp(26px,4.17vw,64px)] leading-[140%] md:leading-[110%]">
+                            <span class="text-primary"> Designing</span> Excellence
+                        </h2>
+                        <p class="text-old-silver text-base 3xl:text-lg leading-[160%] mt-3">
+                            Our mission is to make technology accessible <br />
+                            and enjoyable for all
+                        </p>
+                    </div>
+                    <div
+                        class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-5 xl:gap-10 3xl:gap-38 mt-8 fhd:mt-15 lg:px-7.5 3xl:px-12.5">
+                        <div class="about-item animate-on-scroll delay-200 duration-700" data-animation="fade-in-up">
+                            <h3
+                                class="text-[26px] md:text-[32px] lg:text-[42px] 3xl:text-[56px] leading-[120%] font-bold inline-block">
+                                24k
+                            </h3>
+                            <span class="uppercase text-xs md:text-[10px] lg:text-base">
+                                &nbsp;plus</span>
+                            <p
+                                class="capitalize text-xl md:text-base lg:text-lg 3xl:text-xl font-semibold leading-[160%]">
+                                Complete Project
+                            </p>
+                            <p class="text-sm md:text-[11px] lg:text-sm 3xl:text-base leading-[160%] text-old-silver">
+                                Project completed successfully Thrilled to share the news
+                            </p>
+                        </div>
+                        <div class="about-item animate-on-scroll delay-400 duration-700" data-animation="fade-in-up">
+                            <h3
+                                class="text-[26px] md:text-[32px] lg:text-[42px] 3xl:text-[56px] leading-[120%] font-bold inline-block">
+                                18k
+                            </h3>
+                            <span class="uppercase text-xs md:text-[10px] lg:text-base">
+                                &nbsp;plus</span>
+                            <p
+                                class="capitalize text-xl md:text-base lg:text-lg 3xl:text-xl font-semibold leading-[160%]">
+                                Happy clients
+                            </p>
+                            <p class="text-sm md:text-[11px] lg:text-sm 3xl:text-base leading-[160%] text-old-silver">
+                                Project completed successfully Thrilled to share the news
+                            </p>
+                        </div>
+                        <div class="about-item animate-on-scroll delay-600 duration-700" data-animation="fade-in-up">
+                            <h3
+                                class="text-[26px] md:text-[32px] lg:text-[42px] 3xl:text-[56px] leading-[120%] font-bold inline-block">
+                                226
+                            </h3>
+                            <span class="uppercase text-xs md:text-[10px] lg:text-base">
+                                &nbsp;plus</span>
+                            <p
+                                class="capitalize text-xl md:text-base lg:text-lg 3xl:text-xl font-semibold leading-[160%]">
+                                Achieve awards
+                            </p>
+                            <p class="text-sm md:text-[11px] lg:text-sm 3xl:text-base leading-[160%] text-old-silver">
+                                Project completed successfully Thrilled to share the news
+                            </p>
+                        </div>
+                        <div class="about-item hidden sm:flex sm:place-items-center md:hidden animate-on-scroll delay-800 duration-700"
+                            data-animation="fade-in-up">
+                            <h3
+                                class="text-[26px] md:text-[32px] lg:text-[42px] 3xl:text-[56px] leading-[120%] font-light italic inline-block">
+                                "Quality is not an act, it is a habit."
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center justify-center mt-10 md:mt-23 fhd:mt-26.25">
+                        <div class="relative">
+                            <img class="rounded-[200px]" src="src/img/about/about-video-bg.jpg" alt="Video bg" />
+                            <span class="absolute inset-0 rounded-[200px] bg-[#745EFF]/50"></span>
+                        </div>
+                        <a href="https://youtu.be/TqhNILVX8IE?si=P090TCMYeDKB9yNK" class="absolute group"
+                            aria-label="Play button" data-fancybox>
+                            <svg class="group-hover:drop-shadow-2xl group-hover:drop-shadow-black/40 group-hover:scale-105 transition duration-300"
+                                width="93" height="58" viewBox="0 0 93 58" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="11" y="4" width="71" height="50" rx="25" fill="white" fill-opacity="0.1" />
+                                <rect x="11" y="6" width="71" height="46" rx="23" fill="white" fill-opacity="0.1" />
+                                <rect width="93" height="58" rx="29" fill="#EDEAFF" />
+                                <g filter="url(#filter0_d_2128_1986)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M39.5 22.653C39.5 21.227 41.029 20.323 42.279 21.01L53.819 27.358C55.114 28.07 55.114 29.931 53.819 30.643L42.28 36.991C41.03 37.678 39.501 36.774 39.501 35.348L39.5 22.653Z"
+                                        fill="#745EFF" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2128_1986" x="31.5" y="16.7754" width="31.2903"
+                                        height="32.4502" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="4" />
+                                        <feGaussianBlur stdDeviation="4" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.454902 0 0 0 0 0.368627 0 0 0 0 1 0 0 0 0.2 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_2128_1986" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2128_1986"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- About section end -->
+
+            <!-- Service section start -->
+            <section id="services"
+                class="service-setion relative overflow-hidden pt-0 pb-12 md:pt-16.25 md:pb-20 3xl:pb-32 fhd:pb-56.75">
+                <!-- Horizontal line -->
+                <div
+                    class="pointer-events-none absolute inset-0 h-44.5 md:h-15.5 2xl:h-22.5 3xl:h-31.75 fhd:h-40 md:border-b border-b-black/8">
+                </div>
+                <div
+                    class="pointer-events-none absolute inset-0 md:h-112.5 lg:h-119.5 xl:h-138 2xl:h-166.5 3xl:h-198.75 fhd:h-215 md:border-b border-b-black/8">
+                </div>
+
+                <div
+                    class="hidden md:block background-text absolute uppercase text-[clamp(88px,11.56vw,222px)] md:leading-[110%] left-0 top-[0.5%] md:top-3 lg:top-0 3xl:top-[3%] fhd:top-[4.3%] text-transparent font-bold [-webkit-text-stroke:2px_rgba(0,0,0,0.08)] pointer-events-none">
+                    service
+                </div>
+                <div
+                    class="container grid md:grid-cols-2 md:items-end 2xl:items-baseline gap-6 md:gap-3.5 xl:gap-4 mt-4">
+                    <div class="service-left mt-12 md:mt-8.75 xl:mt-14 2xl:mt-20.75 3xl:mt-32 fhd:mt-44">
+                        <div class="service-title mb-8 fhd:mb-10 text-center md:text-left animate-on-scroll delay-300 duration-500"
+                            data-animation="fade-in-up">
+                            <h2
+                                class="hidden lg:block text-[clamp(26px,4.17vw,64px)] font-bold text-black leading-[140%] md:leading-[110%]">
+                                Our Diverse <span class="text-primary">Service</span>
+                                <span class="mt-1 inline-flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-5">
+                                    <span>Spectrum</span>
+                                    <span
+                                        class="hidden lg:block text-xs sm:text-sm 3xl:text-lg font-normal text-old-silver leading-[150%] max-w-xl">
+                                        We pride ourselves on delivering solutions
+                                        <br class="hidden 3xl:block" />
+                                        that elevate digital experiences.
+                                    </span>
+                                </span>
+                            </h2>
+                            <h2
+                                class="lg:hidden text-[clamp(26px,4.17vw,64px)] font-bold leading-[140%] md:leading-[110%]">
+                                Our Diverse <span class="text-primary">Service</span> Spectrum
+                            </h2>
+                            <p class="lg:hidden text-xs sm:text-sm text-old-silver leading-[150%]">
+                                We pride ourselves on delivering solutions that elevate
+                                digital experiences.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="src/img/service/service-img.jpg" alt="Service image" />
+                        </div>
+                    </div>
+                    <div class="service-right animate-on-scroll delay-200 duration-500" data-animation="slide-in-right">
+                        <div
+                            class="flex justify-between items-center px-5 md:p-5 lg:p-5 xl:p-6 2xl:p-10 py-5 border-y border-y-black/8">
+                            <h3 class="font-semibold text-[clamp(20px,2.29vw,44px)] leading-[160%] md:leading-[120%]">
+                                01 &nbsp;Digital Marketing
+                            </h3>
+                            <a class="group text-[#745EFF] border border-[#745EFF]/8 rounded-[200px] px-3.5 py-1 md:px-3 md:py-1.75 lg:px-5 lg:py-2.5 xl:px-5.25 xl:py-2.25 3xl:px-6 3xl:py-3.5"
+                                href="under-construction.html" aria-label="Link button">
+                                <svg class="group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300 md:size-5 xl:size-6 2xl:size-7.5"
+                                    width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.625 24.375L22.5 7.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5 7.5H22.5V22.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex justify-between items-center px-5 md:p-5 lg:p-5 xl:p-6 2xl:p-10 py-5">
+                            <h3 class="font-semibold text-[clamp(20px,2.29vw,44px)] leading-[160%] md:leading-[120%]">
+                                02 &nbsp;Graphic Design
+                            </h3>
+                            <a class="group text-[#745EFF] border border-[#745EFF]/8 rounded-[200px] px-3.5 py-1 md:px-3 md:py-1.75 lg:px-5 lg:py-2.5 xl:px-5.25 xl:py-2.25 3xl:px-6 3xl:py-3.5"
+                                href="under-construction.html" aria-label="Link button">
+                                <svg class="group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300 md:size-5 xl:size-6 2xl:size-7.5"
+                                    width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.625 24.375L22.5 7.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5 7.5H22.5V22.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div
+                            class="flex justify-between items-center px-5 md:p-5 lg:p-5 xl:p-6 2xl:p-10 py-5 border-y border-y-black/8">
+                            <h3 class="font-semibold text-[clamp(20px,2.29vw,44px)] leading-[160%] md:leading-[120%]">
+                                03 &nbsp;Development
+                            </h3>
+                            <a class="group text-[#745EFF] border border-[#745EFF]/8 rounded-[200px] px-3.5 py-1 md:px-3 md:py-1.75 lg:px-5 lg:py-2.5 xl:px-5.25 xl:py-2.25 3xl:px-6 3xl:py-3.5"
+                                href="under-construction.html" aria-label="Link button">
+                                <svg class="group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300 md:size-5 xl:size-6 2xl:size-7.5"
+                                    width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.625 24.375L22.5 7.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5 7.5H22.5V22.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div
+                            class="flex justify-between items-center px-5 md:p-5 lg:p-5 xl:p-6 2xl:p-10 py-5 border-b border-b-black/8">
+                            <h3 class="font-semibold text-[clamp(20px,2.29vw,44px)] leading-[160%] md:leading-[120%]">
+                                04 &nbsp;UI/UX Design
+                            </h3>
+                            <a class="group text-[#745EFF] border border-[#745EFF]/8 rounded-[200px] px-3.5 py-1 md:px-3 md:py-1.75 lg:px-5 lg:py-2.5 xl:px-5.25 xl:py-2.25 3xl:px-6 3xl:py-3.5"
+                                href="under-construction.html" aria-label="Link button">
+                                <svg class="group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300 md:size-5 xl:size-6 2xl:size-7.5"
+                                    width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.625 24.375L22.5 7.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5 7.5H22.5V22.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Service section end -->
+
+            <!-- Testimonial section start -->
+            <section id="testimonial"
+                class="testimonial-section bg-cover py-10 md:py-7.5 lg:py-20 3xl:py-10 3xl:pb-25 fhd:pt-22.25 relative overflow-hidden"
+                data-bg-img="src/img/bg/hero-bg-01.jpg">
+                <!-- Vertical lines -->
+                <div class="hidden pointer-events-none absolute inset-0 md:grid grid-cols-8">
+                    <div
+                        class="border-r border-white/8 -mr-8 md:mr-[81%] lg:mr-[36%] 2xl:mr-[9%] 3xl:mr-[18%] fhd:mr-[-12%]">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="border-r border-white/8"></div>
+                    <div></div>
+                    <div></div>
+                    <div
+                        class="border-r border-white/8 mr-6 md:mr-[-81%] lg:mr-[-36%] 2xl:mr-[-9%] 3xl:mr-[-24%] fhd:mr-[12%]">
+                    </div>
+                    <div></div>
+                </div>
+                <div
+                    class="stars hidden xl:block text-[clamp(75px,5.83vw,112px)] text-transparent [-webkit-text-stroke:1188 (255,255,255,0.04)] leading-[1.1] absolute xl:top-[20%] fhd:top-[9%] xl:left-[1%] fhd:left-[4%]">
+                    <div><i class="ri-star-fill"></i></div>
+                    <div><i class="ri-star-fill"></i></div>
+                    <div><i class="ri-star-fill"></i></div>
+                    <div><i class="ri-star-fill"></i></div>
+                    <div><i class="ri-star-fill"></i></div>
+                </div>
+                <h2
+                    class="hidden xl:block uppercase font-bold text-[clamp(58px,4.69vw,90px)] text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.04)] absolute rotate-270 xl:right-[-15%] 2xl:right-[-14%] 3xl:right-[-14%] fhd:right-[-10%] xl:bottom-[37%] 2xl:bottom-[37%] 3xl:bottom-[42%] fhd:bottom-[42%] pointer-events-none">
+                    testimonials
+                </h2>
+                <div class="relative">
+                    <!-- Swiper -->
+                    <div class="swiper testimonial-active">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide self-center xl:px-20">
+                                <div
+                                    class="container 3xl:max-w-328 2xl:max-w-312.5 grid grid-cols-2 md:grid-cols-12 md:items-center relative my-5 md:my-7.5 3xl:mb-19.25 fhd:mb-30.75">
+                                    <svg class="quotation-top absolute w-8 md:w-10 3xl:w-18.25 top-[-4%] md:top-[-12%] lg:top-[2%] 2xl:top-[10%] 3xl:-top-2.5 fhd:-top-4.5 left-[4%] sm:left-[3%] md:left-[2%] lg:left-[2%] 3xl:left-[4.5%] fhd:left-[1.5%]"
+                                        width="73" height="48" viewBox="0 0 73 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M38.1343 0L25.7861 48H0L19.4303 0H38.1343ZM73 0L60.6517 48H34.8657L54.296 0H73Z"
+                                            fill="white" fill-opacity="0.1" />
+                                    </svg>
+                                    <svg class="quotation-bottom absolute right-[9%] md:right-[5%] fhd:right-[2.5%] bottom-[-4%] md:bottom-[-12%] lg:bottom-[-3%] 2xl:bottom-[-5%] 3xl:bottom-[-13%] fhd:bottom-[-24%] w-8 md:w-10 3xl:w-18.25"
+                                        width="73" height="48" viewBox="0 0 73 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M34.8657 48L47.2139 3.8147e-06H73L53.5697 48H34.8657ZM0 48L12.3483 3.8147e-06H38.1343L18.704 48H0Z"
+                                            fill="white" fill-opacity="0.1" />
+                                    </svg>
+                                    <div
+                                        class="testimonial-content flex flex-col gap-3 md:gap-0 justify-between col-span-7 md:col-span-8 fhd:col-span-7 3xl:pl-11.25 fhd:pl-0 fhd:pr-3.75">
+                                        <div class="fhd:mt-19">
+                                            <p
+                                                class="text-base md:text-sm lg:text-base 2xl:text-lg 3xl:text-xl text-old-silver">
+                                                It seems like you're referring to "WebWhiz" in a
+                                                specific context that goes beyond the
+                                                <br class="hidden lg:block" />
+                                                traditional definition of business partners. From your
+                                                description, it appears that "WebWhiz"
+                                                <br class="hidden lg:block 3xl:hidden" />
+                                                are more like a dedicated team or group of people who
+                                                work closely with you and your organization, providing
+                                                support and collaboration on a daily basis.
+                                            </p>
+                                            <div class="author flex items-center gap-4 mt-8 3xl:mt-9 fhd:mt-10">
+                                                <div class="author-img">
+                                                    <img class="rounded-lg" src="src/img/testimonial/author-img.jpg"
+                                                        alt="Testimonial Author image" />
+                                                </div>
+                                                <div class="author-text">
+                                                    <h3
+                                                        class="font-semibold text-xl md:text-xs 2xl:text-[15px] 3xl:text-xl text-white">
+                                                        Mark Henry
+                                                    </h3>
+                                                    <span
+                                                        class="text-old-silver text-base md:text-[10px] xl:text-xs 3xl:text-base">
+                                                        CEO of webiner agency
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between items-center md:mt-10 3xl:mt-32">
+                                            <div
+                                                class="font-bold text-2xl md:text-3xl xl:text-[40px] 3xl:text-[52px] text-white/8 2xl:pl-23.5 fhd:pl-0">
+                                                01/03
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="testimonial-photo col-span-5 md:col-span-4 fhd:col-span-5 flex justify-center fhd:justify-end mt-7 md:mt-0 md:p-5.5 lg:p-12.5 fhd:p-0 fhd:pr-10">
+                                        <div class="md:border border-white/8 relative p-2.5 md:p-0">
+                                            <img class="md:translate-3 3xl:translate-7.5"
+                                                src="src/img/testimonial/testimonial-img.jpg" alt="Testimonial image" />
+                                            <svg class="absolute top-[-8%] md:-top-7.75 lg:top-[-8%] right-[-5%] md:-right-10.75 lg:right-[-20%] 3xl:right-[-25%] w-8.75 lg:size-12 3xl:size-16.25"
+                                                width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.695 31.838C14.5157 28.238 14.8571 26.1587 16.8588 24.7776C21.126 21.8449 21.576 19.688 19.0622 14.288C17.1381 10.1604 16.9208 8.54667 18.0691 6.4984C19.6208 3.70531 15.2761 5.00881 14.2985 8.0657C13.5847 10.3002 13.8329 11.7277 15.5398 15.0794C18.1622 20.2466 18.0381 21.7983 14.8726 23.8776C11.0554 26.3604 10.295 29.5104 12.4209 33.8707C13.4916 36.1207 16.8122 35.2828 15.695 31.838Z"
+                                                    fill="#94E00D" />
+                                                <path
+                                                    d="M34.5942 26.1278C34.3615 26.764 34.0977 28.3002 34.0046 29.5105C33.7718 32.8467 33.5391 33.1415 31.0098 33.4053C26.277 33.8864 22.4288 37.5484 23.0029 41.0398C23.4684 44.0191 25.8891 43.4294 26.0908 40.2794C26.3081 36.9277 27.3632 35.7174 30.4356 35.345C35.1994 34.7708 37.2942 32.7071 37.496 28.4398C37.6666 24.7002 38.3649 23.6916 40.5218 24.0485C42.4149 24.3588 44.8977 23.2416 44.0908 22.4347C42.1201 20.433 35.758 22.9157 34.5942 26.1278Z"
+                                                    fill="#94E00D" />
+                                                <path
+                                                    d="M48.1261 45.0581C46.3572 46.827 46.3882 46.827 44.0296 45.4305C40.0106 43.0563 34.3934 44.577 32.2986 48.596C30.4365 52.1649 33.7417 51.4356 34.8744 49.1546C36.3796 46.1598 38.2727 45.6632 41.1744 47.4787C43.7037 49.077 46.1089 49.0305 48.6692 47.277C49.7399 46.5477 50.5623 45.7253 51.4158 44.8408C53.2158 43.0098 54.4416 44.0494 56.133 45.8029C59.1588 48.9529 62.2778 47.1063 59.2985 44.0339C56.0089 40.6512 52.1761 41.0081 48.1261 45.0581Z"
+                                                    fill="#94E00D" />
+                                            </svg>
+                                            <svg class="hidden lg:block absolute w-[calc(100%+20px)] 3xl:w-[calc(100%+55px)] lg:bottom-[-10%] xl:bottom-[-9.5%] 2xl:bottom-[-7%] 3xl:bottom-[-10%]"
+                                                width="425" height="30" viewBox="0 0 425 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M424.588 15.3153C422.311 15.1516 419.872 15.2869 417.595 15.1232C369.679 12.4782 321.744 11.1183 273.538 12.1348C199.938 13.2339 126.158 15.9171 52.7673 24.1297C39.0649 25.7181 25.5954 27.5007 12.126 29.2833C9.91988 29.6127 8.10843 29.8375 6.064 29.868C3.23032 30.108 0.881563 29.4512 0.149278 25.805C-0.583006 22.1588 1.49941 19.5579 3.79581 18.4363C6.81012 16.6122 10.0574 14.9822 13.4473 14.3385C22.9896 12.3181 32.9265 10.1929 42.4497 9.4576C150.453 -0.26023 257.895 -3.94038 365.38 5.42581C383.833 6.92939 402.104 10.0171 420.466 12.3128C421.954 12.6859 423.443 13.0591 424.698 13.238C424.769 13.7311 424.679 14.5232 424.588 15.3153Z"
+                                                    fill="#94E00D" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide self-center xl:px-20">
+                                <div
+                                    class="3xl:max-w-328 2xl:max-w-312.5 container grid grid-cols-2 md:grid-cols-12 md:items-center relative my-5 md:my-7.5 3xl:mb-19.25 fhd:mb-30.75">
+                                    <svg class="quotation-top absolute w-8 md:w-10 3xl:w-18.25 top-[-4%] md:top-[-12%] lg:top-[2%] 2xl:top-[10%] 3xl:-top-2.5 fhd:-top-4.5 left-[4%] sm:left-[3%] md:left-[2%] lg:left-[2%] 3xl:left-[4.5%] fhd:left-[1.5%]"
+                                        width="73" height="48" viewBox="0 0 73 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M38.1343 0L25.7861 48H0L19.4303 0H38.1343ZM73 0L60.6517 48H34.8657L54.296 0H73Z"
+                                            fill="white" fill-opacity="0.1" />
+                                    </svg>
+                                    <svg class="quotation-bottom absolute right-[9%] md:right-[5%] fhd:right-[2.5%] bottom-[-4%] md:bottom-[-12%] lg:bottom-[-3%] 2xl:bottom-[-5%] 3xl:bottom-[-13%] fhd:bottom-[-24%] w-8 md:w-10 3xl:w-18.25"
+                                        width="73" height="48" viewBox="0 0 73 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M34.8657 48L47.2139 3.8147e-06H73L53.5697 48H34.8657ZM0 48L12.3483 3.8147e-06H38.1343L18.704 48H0Z"
+                                            fill="white" fill-opacity="0.1" />
+                                    </svg>
+                                    <div
+                                        class="testimonial-content flex flex-col gap-3 md:gap-0 justify-between col-span-7 md:col-span-8 fhd:col-span-7 3xl:pl-11.25 fhd:pl-0 fhd:pr-3.75">
+                                        <div class="fhd:mt-19">
+                                            <p
+                                                class="text-base md:text-sm lg:text-base 2xl:text-lg 3xl:text-xl text-old-silver">
+                                                It seems like you're referring to "WebWhiz" in a
+                                                specific context that goes beyond the
+                                                <br class="hidden lg:block" />
+                                                traditional definition of business partners. From your
+                                                description, it appears that "WebWhiz"
+                                                <br class="hidden lg:block 3xl:hidden" />
+                                                are more like a dedicated team or group of people who
+                                                work closely with you and your organization, providing
+                                                support and collaboration on a daily basis.
+                                            </p>
+                                            <div class="author flex items-center gap-4 mt-8 3xl:mt-9 fhd:mt-10">
+                                                <div class="author-img">
+                                                    <img class="rounded-lg" src="src/img/testimonial/author-img-02.jpg"
+                                                        alt="Testimonial Author image" />
+                                                </div>
+                                                <div class="author-text">
+                                                    <h3
+                                                        class="font-semibold text-xl md:text-xs 2xl:text-[15px] 3xl:text-xl text-white">
+                                                        Richard Fisher
+                                                    </h3>
+                                                    <span
+                                                        class="text-old-silver text-base md:text-[10px] xl:text-xs 3xl:text-base">
+                                                        CEO of webiner agency
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between items-center md:mt-10 3xl:mt-32">
+                                            <div
+                                                class="font-bold text-2xl md:text-3xl xl:text-[40px] 3xl:text-[52px] text-white/8 2xl:pl-23.5 fhd:pl-0">
+                                                02/03
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="testimonial-photo col-span-5 md:col-span-4 fhd:col-span-5 flex justify-center fhd:justify-end mt-7 md:mt-0 md:p-5.5 lg:p-12.5 fhd:p-0 fhd:pr-10">
+                                        <div class="md:border border-white/8 relative p-2.5 md:p-0">
+                                            <img class="md:translate-3 3xl:translate-7.5"
+                                                src="src/img/testimonial/testimonial-img-02.jpg"
+                                                alt="Testimonial image" />
+                                            <svg class="absolute top-[-8%] md:-top-7.75 lg:top-[-8%] right-[-5%] md:-right-10.75 lg:right-[-20%] 3xl:right-[-25%] w-8.75 lg:size-12 3xl:size-16.25"
+                                                width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.695 31.838C14.5157 28.238 14.8571 26.1587 16.8588 24.7776C21.126 21.8449 21.576 19.688 19.0622 14.288C17.1381 10.1604 16.9208 8.54667 18.0691 6.4984C19.6208 3.70531 15.2761 5.00881 14.2985 8.0657C13.5847 10.3002 13.8329 11.7277 15.5398 15.0794C18.1622 20.2466 18.0381 21.7983 14.8726 23.8776C11.0554 26.3604 10.295 29.5104 12.4209 33.8707C13.4916 36.1207 16.8122 35.2828 15.695 31.838Z"
+                                                    fill="#94E00D" />
+                                                <path
+                                                    d="M34.5942 26.1278C34.3615 26.764 34.0977 28.3002 34.0046 29.5105C33.7718 32.8467 33.5391 33.1415 31.0098 33.4053C26.277 33.8864 22.4288 37.5484 23.0029 41.0398C23.4684 44.0191 25.8891 43.4294 26.0908 40.2794C26.3081 36.9277 27.3632 35.7174 30.4356 35.345C35.1994 34.7708 37.2942 32.7071 37.496 28.4398C37.6666 24.7002 38.3649 23.6916 40.5218 24.0485C42.4149 24.3588 44.8977 23.2416 44.0908 22.4347C42.1201 20.433 35.758 22.9157 34.5942 26.1278Z"
+                                                    fill="#94E00D" />
+                                                <path
+                                                    d="M48.1261 45.0581C46.3572 46.827 46.3882 46.827 44.0296 45.4305C40.0106 43.0563 34.3934 44.577 32.2986 48.596C30.4365 52.1649 33.7417 51.4356 34.8744 49.1546C36.3796 46.1598 38.2727 45.6632 41.1744 47.4787C43.7037 49.077 46.1089 49.0305 48.6692 47.277C49.7399 46.5477 50.5623 45.7253 51.4158 44.8408C53.2158 43.0098 54.4416 44.0494 56.133 45.8029C59.1588 48.9529 62.2778 47.1063 59.2985 44.0339C56.0089 40.6512 52.1761 41.0081 48.1261 45.0581Z"
+                                                    fill="#94E00D" />
+                                            </svg>
+                                            <svg class="hidden lg:block absolute w-[calc(100%+20px)] 3xl:w-[calc(100%+55px)] lg:bottom-[-10%] xl:bottom-[-9.5%] 2xl:bottom-[-7%] 3xl:bottom-[-10%]"
+                                                width="425" height="30" viewBox="0 0 425 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M424.588 15.3153C422.311 15.1516 419.872 15.2869 417.595 15.1232C369.679 12.4782 321.744 11.1183 273.538 12.1348C199.938 13.2339 126.158 15.9171 52.7673 24.1297C39.0649 25.7181 25.5954 27.5007 12.126 29.2833C9.91988 29.6127 8.10843 29.8375 6.064 29.868C3.23032 30.108 0.881563 29.4512 0.149278 25.805C-0.583006 22.1588 1.49941 19.5579 3.79581 18.4363C6.81012 16.6122 10.0574 14.9822 13.4473 14.3385C22.9896 12.3181 32.9265 10.1929 42.4497 9.4576C150.453 -0.26023 257.895 -3.94038 365.38 5.42581C383.833 6.92939 402.104 10.0171 420.466 12.3128C421.954 12.6859 423.443 13.0591 424.698 13.238C424.769 13.7311 424.679 14.5232 424.588 15.3153Z"
+                                                    fill="#94E00D" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide self-center xl:px-20">
+                                <div
+                                    class="3xl:max-w-328 2xl:max-w-312.5 container grid grid-cols-2 md:grid-cols-12 md:items-center relative my-5 md:my-7.5 3xl:mb-19.25 fhd:mb-30.75">
+                                    <svg class="quotation-top absolute w-8 md:w-10 3xl:w-18.25 top-[-4%] md:top-[-12%] lg:top-[2%] 2xl:top-[10%] 3xl:-top-2.5 fhd:-top-4.5 left-[4%] sm:left-[3%] md:left-[2%] lg:left-[2%] 3xl:left-[4.5%] fhd:left-[1.5%]"
+                                        width="73" height="48" viewBox="0 0 73 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M38.1343 0L25.7861 48H0L19.4303 0H38.1343ZM73 0L60.6517 48H34.8657L54.296 0H73Z"
+                                            fill="white" fill-opacity="0.1" />
+                                    </svg>
+                                    <svg class="quotation-bottom absolute right-[9%] md:right-[5%] fhd:right-[2.5%] bottom-[-4%] md:bottom-[-12%] lg:bottom-[-3%] 2xl:bottom-[-5%] 3xl:bottom-[-13%] fhd:bottom-[-24%] w-8 md:w-10 3xl:w-18.25"
+                                        width="73" height="48" viewBox="0 0 73 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M34.8657 48L47.2139 3.8147e-06H73L53.5697 48H34.8657ZM0 48L12.3483 3.8147e-06H38.1343L18.704 48H0Z"
+                                            fill="white" fill-opacity="0.1" />
+                                    </svg>
+                                    <div
+                                        class="testimonial-content flex flex-col gap-3 md:gap-0 justify-between col-span-7 md:col-span-8 fhd:col-span-7 3xl:pl-11.25 fhd:pl-0 fhd:pr-3.75">
+                                        <div class="fhd:mt-19">
+                                            <p
+                                                class="text-base md:text-sm lg:text-base 2xl:text-lg 3xl:text-xl text-old-silver">
+                                                It seems like you're referring to "WebWhiz" in a
+                                                specific context that goes beyond the
+                                                <br class="hidden lg:block" />
+                                                traditional definition of business partners. From your
+                                                description, it appears that "WebWhiz"
+                                                <br class="hidden lg:block 3xl:hidden" />
+                                                are more like a dedicated team or group of people who
+                                                work closely with you and your organization, providing
+                                                support and collaboration on a daily basis.
+                                            </p>
+                                            <div class="author flex items-center gap-4 mt-8 3xl:mt-9 fhd:mt-10">
+                                                <div class="author-img">
+                                                    <img class="rounded-lg" src="src/img/testimonial/author-img-03.jpg"
+                                                        alt="Testimonial Author image" />
+                                                </div>
+                                                <div class="author-text">
+                                                    <h3
+                                                        class="font-semibold text-xl md:text-xs 2xl:text-[15px] 3xl:text-xl text-white">
+                                                        Elijah Perez
+                                                    </h3>
+                                                    <span
+                                                        class="text-old-silver text-base md:text-[10px] xl:text-xs 3xl:text-base">
+                                                        CEO of webiner agency
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between items-center md:mt-10 3xl:mt-32">
+                                            <div
+                                                class="font-bold text-2xl md:text-3xl xl:text-[40px] 3xl:text-[52px] text-white/8 2xl:pl-23.5 fhd:pl-0">
+                                                03/03
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="testimonial-photo col-span-5 md:col-span-4 fhd:col-span-5 flex justify-center fhd:justify-end mt-7 md:mt-0 md:p-5.5 lg:p-12.5 fhd:p-0 fhd:pr-10">
+                                        <div class="md:border border-white/8 relative p-2.5 md:p-0">
+                                            <img class="md:translate-3 3xl:translate-7.5"
+                                                src="src/img/testimonial/testimonial-img-03.jpg"
+                                                alt="Testimonial image" />
+                                            <svg class="absolute top-[-8%] md:-top-7.75 lg:top-[-8%] right-[-5%] md:-right-10.75 lg:right-[-20%] 3xl:right-[-25%] w-8.75 lg:size-12 3xl:size-16.25"
+                                                width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.695 31.838C14.5157 28.238 14.8571 26.1587 16.8588 24.7776C21.126 21.8449 21.576 19.688 19.0622 14.288C17.1381 10.1604 16.9208 8.54667 18.0691 6.4984C19.6208 3.70531 15.2761 5.00881 14.2985 8.0657C13.5847 10.3002 13.8329 11.7277 15.5398 15.0794C18.1622 20.2466 18.0381 21.7983 14.8726 23.8776C11.0554 26.3604 10.295 29.5104 12.4209 33.8707C13.4916 36.1207 16.8122 35.2828 15.695 31.838Z"
+                                                    fill="#94E00D" />
+                                                <path
+                                                    d="M34.5942 26.1278C34.3615 26.764 34.0977 28.3002 34.0046 29.5105C33.7718 32.8467 33.5391 33.1415 31.0098 33.4053C26.277 33.8864 22.4288 37.5484 23.0029 41.0398C23.4684 44.0191 25.8891 43.4294 26.0908 40.2794C26.3081 36.9277 27.3632 35.7174 30.4356 35.345C35.1994 34.7708 37.2942 32.7071 37.496 28.4398C37.6666 24.7002 38.3649 23.6916 40.5218 24.0485C42.4149 24.3588 44.8977 23.2416 44.0908 22.4347C42.1201 20.433 35.758 22.9157 34.5942 26.1278Z"
+                                                    fill="#94E00D" />
+                                                <path
+                                                    d="M48.1261 45.0581C46.3572 46.827 46.3882 46.827 44.0296 45.4305C40.0106 43.0563 34.3934 44.577 32.2986 48.596C30.4365 52.1649 33.7417 51.4356 34.8744 49.1546C36.3796 46.1598 38.2727 45.6632 41.1744 47.4787C43.7037 49.077 46.1089 49.0305 48.6692 47.277C49.7399 46.5477 50.5623 45.7253 51.4158 44.8408C53.2158 43.0098 54.4416 44.0494 56.133 45.8029C59.1588 48.9529 62.2778 47.1063 59.2985 44.0339C56.0089 40.6512 52.1761 41.0081 48.1261 45.0581Z"
+                                                    fill="#94E00D" />
+                                            </svg>
+                                            <svg class="hidden lg:block absolute w-[calc(100%+20px)] 3xl:w-[calc(100%+55px)] lg:bottom-[-10%] xl:bottom-[-9.5%] 2xl:bottom-[-7%] 3xl:bottom-[-10%]"
+                                                width="425" height="30" viewBox="0 0 425 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M424.588 15.3153C422.311 15.1516 419.872 15.2869 417.595 15.1232C369.679 12.4782 321.744 11.1183 273.538 12.1348C199.938 13.2339 126.158 15.9171 52.7673 24.1297C39.0649 25.7181 25.5954 27.5007 12.126 29.2833C9.91988 29.6127 8.10843 29.8375 6.064 29.868C3.23032 30.108 0.881563 29.4512 0.149278 25.805C-0.583006 22.1588 1.49941 19.5579 3.79581 18.4363C6.81012 16.6122 10.0574 14.9822 13.4473 14.3385C22.9896 12.3181 32.9265 10.1929 42.4497 9.4576C150.453 -0.26023 257.895 -3.94038 365.38 5.42581C383.833 6.92939 402.104 10.0171 420.466 12.3128C421.954 12.6859 423.443 13.0591 424.698 13.238C424.769 13.7311 424.679 14.5232 424.588 15.3153Z"
+                                                    fill="#94E00D" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="testimonial-navigation-buttons flex gap-5 md:pr-[18%] absolute 2xl:bottom-[26%] bottom-[-3%] md:bottom-[9%] lg:bottom-[18%] xl:bottom-[22%] 3xl:bottom-[24.5%] fhd:bottom-[19%] left-1/2 -translate-x-1/2 z-10">
+                        <a class="testimonial-button-prev text-white py-2.5 px-4 fhd:py-[18.5px] fhd:px-[27.5px] border border-white rounded-[200px] hover:text-primary group"
+                            href="#" aria-label="Navigation arrow left">
+                            <svg class="group-hover:-translate-x-1 transition duration-300 md:w-5 3xl:w-5.75" width="23"
+                                height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.375 10.125H0.75M10.0312 19.5L0.75 10.125L10.0312 0.75"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a class="testimonial-button-next text-white py-2.5 px-4 fhd:py-[18.5px] fhd:px-[27.5px] border border-white rounded-[200px] hover:text-primary group"
+                            href="#" aria-label="Navigation arrow right">
+                            <svg class="group-hover:translate-x-1 transition duration-300 md:w-5 3xl:w-5.75" width="23"
+                                height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 10.125H21.375M12.0938 19.5L21.375 10.125L12.0938 0.75"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial section end -->
+
+            <!-- Blog section start -->
+            <section class="blog-section relative py-15 md:py-20 fhd:pt-40 fhd:pb-40">
+                <!-- Horizontal line -->
+                <div
+                    class="hidden md:block pointer-events-none absolute inset-0 md:h-14 lg:h-15 fhd:h-20 border-b border-b-black/8">
+                </div>
+                <div
+                    class="hidden md:block pointer-events-none absolute inset-0 md:h-117.5 lg:h-133.5 xl:h-152 2xl:h-171 3xl:h-181.25 fhd:h-215 border-b border-b-black/8">
+                </div>
+                <div
+                    class="hidden md:block pointer-events-none absolute inset-0 md:h-185.75 lg:h-220 xl:h-253.75 2xl:h-286.5 3xl:h-303 fhd:h-344.25 border-b border-b-black/8">
+                </div>
+                <div
+                    class="hidden md:block pointer-events-none absolute inset-0 md:h-254.5 lg:h-306.25 xl:h-354.75 2xl:h-[1606px] 3xl:h-[1701px] fhd:h-[1896px] border-b border-b-black/8">
+                </div>
+                <div
+                    class="hidden md:block pointer-events-none absolute inset-0 md:h-322.5 lg:h-[1569px] xl:h-[1824px] 2xl:h-[2070px] 3xl:h-[2186px] fhd:h-[2454px] border-b border-b-black/8">
+                </div>
+
+                <div class="container grid md:grid-cols-12 mb-10 md:mb-10 fhd:mb-20">
+                    <div class="blog-title md:col-span-8 relative text-center md:text-left animate-on-scroll delay-200 duration-500"
+                        data-animation="fade-in-up">
+                        <h2
+                            class="text-[clamp(26px,4.17vw,64px)] font-bold leading-[140%] md:leading-[110%] mb-3 md:mb-0">
+                            From Expert Advice to <br class="hidden md:block" />
+                            Personal <span class="text-primary">Stories</span>
+                        </h2>
+                        <p
+                            class="text-base md:text-sm xl:text-lg leading-[160%] text-old-silver lg:absolute bottom-[2%] md:bottom-[-3%] lg:bottom-0 2xl:bottom-[5%] right-[11.5%] md:right-0 lg:right-[6%] xl:right-[3%] 2xl:right-[9%] 3xl:right-[11%] md:mt-2 lg:mt-0">
+                            Of course! It seems like you'd like a sample
+                            <br class="hidden lg:block" />
+                            paragraph for your blog.
+                        </p>
+                    </div>
+                </div>
+                <div class="container grid md:grid-cols-2 mb-5 md:mb-12.5 fhd:mb-20">
+                    <div class="hidden md:block blog-text pointer-events-none">
+                        blog
+                    </div>
+                    <div class="blog-img animate-on-scroll delay-75 duration-1000" data-animation="slide-in-right">
+                        <a href="blog-preview.html" aria-label="Blog image"><img src="src/img/blog/blog-01.jpg"
+                                alt="Blog image 01" /></a>
+                    </div>
+                </div>
+                <div class="container grid md:grid-cols-2 mb-5 md:mb-12.5 fhd:mb-20">
+                    <div class="blog-img animate-on-scroll delay-75 duration-1000" data-animation="slide-in-left">
+                        <a href="blog-preview.html" aria-label="Blog image"><img src="src/img/blog/blog-02.jpg"
+                                alt="Blog image 02" /></a>
+                    </div>
+                    <div class="hidden blog-text md:flex items-end pointer-events-none">
+                        blog
+                    </div>
+                </div>
+                <div class="container grid md:grid-cols-2 mb-5 md:mb-12.5 fhd:mb-20">
+                    <div class="hidden md:block blog-text pointer-events-none">
+                        blog
+                    </div>
+                    <div class="blog-img animate-on-scroll delay-75 duration-1000" data-animation="slide-in-right">
+                        <a href="blog-preview.html" aria-label="Blog image"><img src="src/img/blog/blog-03.jpg"
+                                alt="Blog image 01" /></a>
+                    </div>
+                </div>
+                <div class="container grid md:grid-cols-2">
+                    <div class="blog-img animate-on-scroll delay-75 duration-1000" data-animation="slide-in-left">
+                        <a href="blog-preview.html" aria-label="Blog image"><img src="src/img/blog/blog-04.jpg"
+                                alt="Blog image 02" /></a>
+                    </div>
+                    <div class="hidden blog-text md:flex items-end pointer-events-none">
+                        blog
+                    </div>
+                </div>
+            </section>
+            <!-- Blog section end -->
+
+            <!-- Contact section start -->
+            <section class="contact-section py-15 fhd:py-32.5 bg-cover relative"
+                data-bg-img="src/img/bg/hero-bg-01.jpg">
+                <!-- Vertical lines -->
+                <div class="hidden pointer-events-none absolute inset-0 md:grid grid-cols-8">
+                    <div
+                        class="border-r border-white/8 -mr-8 md:mr-[81%] lg:mr-[36%] 2xl:mr-[9%] 3xl:mr-[18%] fhd:mr-[-12%]">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="border-r border-white/8"></div>
+                    <div></div>
+                    <div></div>
+                    <div
+                        class="border-r border-white/8 mr-6 md:mr-[-81%] lg:mr-[-36%] 2xl:mr-[-9%] 3xl:mr-[-24%] fhd:mr-[12%]">
+                    </div>
+                    <div></div>
+                </div>
+                <h2
+                    class="hidden xl:block uppercase font-bold text-[clamp(77px,4.69vw,90px)] text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.02)] rotate-270 absolute top-[48%] xl:top-[44%] left-[-8.5%] xl:left-[-14.5%] fhd:left-[-8%] pointer-events-none">
+                    Contact Us
+                </h2>
+                <div class="container grid md:grid-cols-2 lg:px-15.75 3xl:px-0">
+                    <div
+                        class="contact-info text-old-silver md:pr-2 xl:pl-18 2xl:pl-35 2xl:pr-5.5 3xl:pr-14 fhd:pl-30.5 fhd:pr-22.75">
+                        <div class="contact-info-top mb-8 md:mb-22.5 animate-on-scroll delay-150"
+                            data-animation="fade-in-up">
+                            <h1
+                                class="text-[clamp(26px,4.17vw,64px)] leading-[140%] md:leading-[110%] text-white font-bold">
+                                Let’s <span class="text-primary">Talk</span>
+                            </h1>
+                            <p class="text-base xl:text-lg">
+                                Have questions, ideas, or simply want to get in touch? We're
+                                here to listen and respond.
+                            </p>
+                        </div>
+                        <div class="contact-info-bottom text-base md:text-lg border border-white/8 rounded-2xl p-8 animate-on-scroll delay-300"
+                            data-animation="slide-in-left">
+                            <div>
+                                <a class="md:text-base flex items-center gap-3 mb-8 hover:drop-shadow-sm hover:drop-shadow-primary transition duration-100"
+                                    href="mailto:monirul0437@gmail.com">
+                                    <svg class="md:size-5" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.667 27.3332H9.33366C5.33366 27.3332 2.66699 25.3332 2.66699 20.6665V11.3332C2.66699 6.6665 5.33366 4.6665 9.33366 4.6665H22.667C26.667 4.6665 29.3337 6.6665 29.3337 11.3332V20.6665C29.3337 25.3332 26.667 27.3332 22.667 27.3332Z"
+                                            stroke="#868686" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M22.6663 12L18.493 15.3333C17.1197 16.4267 14.8663 16.4267 13.493 15.3333L9.33301 12"
+                                            stroke="#868686" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    monirul0437@gmail.com
+                                </a>
+                            </div>
+                            <div>
+                                <a class="md:text-sm flex items-center gap-3 mb-8 hover:drop-shadow-sm hover:drop-shadow-primary transition duration-100"
+                                    href="tel:+8801516776920">
+                                    <svg class="md:size-5" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.3767 22.5233C27.3767 23.0033 27.27 23.4967 27.0433 23.9767C26.8167 24.4567 26.5233 24.91 26.1367 25.3367C25.4833 26.0567 24.7633 26.5767 23.95 26.91C23.15 27.2433 22.2833 27.4167 21.35 27.4167C19.99 27.4167 18.5367 27.0967 17.0033 26.4433C15.47 25.79 13.9367 24.91 12.4167 23.8033C10.8833 22.6833 9.43 21.4433 8.04333 20.07C6.67 18.6833 5.43 17.23 4.32333 15.71C3.23 14.19 2.35 12.67 1.71 11.1633C1.07 9.64333 0.75 8.19 0.75 6.80333C0.75 5.89667 0.91 5.03 1.23 4.23C1.55 3.41667 2.05667 2.67 2.76333 2.00333C3.61667 1.16333 4.55 0.75 5.53667 0.75C5.91 0.75 6.28333 0.83 6.61667 0.99C6.96333 1.15 7.27 1.39 7.51 1.73667L10.6033 6.09667C10.8433 6.43 11.0167 6.73667 11.1367 7.03C11.2567 7.31 11.3233 7.59 11.3233 7.84333C11.3233 8.16333 11.23 8.48333 11.0433 8.79C10.87 9.09667 10.6167 9.41667 10.2967 9.73667L9.28333 10.79C9.13667 10.9367 9.07 11.11 9.07 11.3233C9.07 11.43 9.08333 11.5233 9.11 11.63C9.15 11.7367 9.19 11.8167 9.21667 11.8967C9.45667 12.3367 9.87 12.91 10.4567 13.6033C11.0567 14.2967 11.6967 15.0033 12.39 15.71C13.11 16.4167 13.8033 17.07 14.51 17.67C15.2033 18.2567 15.7767 18.6567 16.23 18.8967C16.2967 18.9233 16.3767 18.9633 16.47 19.0033C16.5767 19.0433 16.6833 19.0567 16.8033 19.0567C17.03 19.0567 17.2033 18.9767 17.35 18.83L18.3633 17.83C18.6967 17.4967 19.0167 17.2433 19.3233 17.0833C19.63 16.8967 19.9367 16.8033 20.27 16.8033C20.5233 16.8033 20.79 16.8567 21.0833 16.9767C21.3767 17.0967 21.6833 17.27 22.0167 17.4967L26.43 20.63C26.7767 20.87 27.0167 21.15 27.1633 21.4833C27.2967 21.8167 27.3767 22.15 27.3767 22.5233Z"
+                                            stroke="#868686" stroke-width="1.5" stroke-miterlimit="10" />
+                                    </svg>
+                                    +880 1516-776920
+                                </a>
+                            </div>
+                            <div class="flex items-center gap-3 mb-8 md:text-base">
+                                <svg class="md:size-5" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0001 17.9064C18.2976 17.9064 20.1601 16.0439 20.1601 13.7464C20.1601 11.4489 18.2976 9.58643 16.0001 9.58643C13.7026 9.58643 11.8401 11.4489 11.8401 13.7464C11.8401 16.0439 13.7026 17.9064 16.0001 17.9064Z"
+                                        stroke="#868686" stroke-width="1.5" />
+                                    <path
+                                        d="M4.8266 11.3198C7.45327 -0.226826 24.5599 -0.213493 27.1733 11.3332C28.7066 18.1065 24.4933 23.8398 20.7999 27.3865C18.1199 29.9732 13.8799 29.9732 11.1866 27.3865C7.5066 23.8398 3.29327 18.0932 4.8266 11.3198Z"
+                                        stroke="#868686" stroke-width="1.5" />
+                                </svg>
+                                Satkhira, Khulna, Bangladesh
+                            </div>
+                            <div class="flex items-center gap-3 md:text-base">
+                                <svg class="md:size-5" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M27.6663 17.6667C27.6663 24.1067 22.4397 29.3333 15.9997 29.3333C9.55967 29.3333 4.33301 24.1067 4.33301 17.6667C4.33301 11.2267 9.55967 6 15.9997 6C22.4397 6 27.6663 11.2267 27.6663 17.6667Z"
+                                        stroke="#868686" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 10.6665V17.3332" stroke="#868686" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 2.6665H20" stroke="#868686" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                24/7 Customer Support
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form flex items-end text-white mt-8 md:mt-0 md:pl-2 xl:pr-18 2xl:pr-35 2xl:pl-5.5 3xl:pl-14 fhd:pl-23 fhd:pr-31.75 animate-on-scroll delay-300"
+                        data-animation="slide-in-right">
+                        <form action="#" class="w-full space-y-7">
+                            <div class="input-group relative">
+                                <label for="name" class="form-label"> Full Name : </label>
+                                <input type="text" id="name" name="name" class="form-input pl-22.5 md:pl-19" />
+                            </div>
+                            <div class="input-group relative">
+                                <label for="email" class="form-label">
+                                    Email Address :
+                                </label>
+                                <input type="email" id="email" name="email" class="form-input pl-29 md:pl-25" />
+                            </div>
+                            <div class="input-group relative">
+                                <label for="message" class="form-label top-[30%]">
+                                    Type Message :
+                                </label>
+                                <textarea name="message" id="message" rows="10"
+                                    class="form-input pl-30 md:pl-26 h-10 md:h-9.5"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="flex items-center justify-center gap-4 text-base md:text-sm leading-relaxed font-semibold bg-[#171717] border border-white/8 w-full py-3.25 group hover:bg-black/30 transition duration-300">
+                                Send Now
+                                <svg class="group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 14.75L14.75 0.75M14.75 11.25V0.75H4.25" stroke="white"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact section end -->
+        </main>
+        <!-- Footer start -->
+        <footer class="mt-22.5 md:mt-12.5 fhd:mt-21.75 lg:px-13.25 relative">
+            <!-- Horizontal line -->
+            <div
+                class="hidden md:block pointer-events-none absolute inset-0 md:h-12 fhd:h-15.75 border-b border-b-black/8">
+            </div>
+            <div
+                class="hidden md:block pointer-events-none absolute inset-0 md:h-63.25 lg:h-63.5 xl:h-62.5 3xl:h-68.5 fhd:h-75.75 border-b border-b-black/8">
+            </div>
+
+            <div class="container grid md:grid-cols-2 mb-5">
+                <div>
+                    <div
+                        class="footer-widget md:pl-0 lg:pl-[2.5%] xl:pl-[5%] 2xl:pl-22.25 md:pr-[12%] 2xl:pr-13.75 fhd:pl-[7%] text-center md:text-left mb-6 md:mb-0">
+                        <h2
+                            class="text-2xl md:text-[15px] fhd:text-2xl 3xl:text-xl font-semibold text-[#171717] mb-6 md:mb-14.5">
+                            Subscribe for newsletter
+                        </h2>
+                        <div
+                            class="input-group bg-white border md:text-[13px] fhd:text-base border-black/8 relative mb-5">
+                            <label for="email"></label>
+                            <input type="email" name="email" placeholder="Enter your Email"
+                                class="form-input h-14 [-webkit-text-fill-color:#666666] p-3.5" />
+                            <button aria-label="Send button" type="submit"
+                                class="bg-[#745EFF] absolute right-0 bottom-0 h-full w-14 flex justify-center items-center hover:bg-[#3316ee] transition duration-200">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 19.5L18 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6 6H18V18" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p
+                            class="text-sm sm:text-[15px] md:text-[13px] 3xl:text-[15px] fhd:text-base leading-[160%] md:leading-[140%] text-old-silver">
+                            Join our community of like-minded individuals who share your
+                            passion and interests.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2">
+                    <div class="footer-widget md:pl-[2%] fhd:pl-[4%] text-center md:text-left mb-5 md:mb-0">
+                        <h2
+                            class="text-2xl md:text-[15px] 3xl:text-xl fhd:text-2xl font-semibold text-[#171717] mb-4 md:mb-12">
+                            Company
+                        </h2>
+                        <ul
+                            class="text-[15px] sm:text-base md:text-[13px] 3xl:text-[15px] fhd:text-lg flex flex-col gap-2 text-old-silver">
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="footer-widget text-center md:text-end md:pr-0 lg:pr-[6%] xl:pr-[10%] 2xl:pr-[28%] 3xl:pr-[22%] fhd:pr-[14%]">
+                        <h2
+                            class="text-2xl md:text-[15px] 3xl:text-xl fhd:text-2xl font-semibold text-[#171717] mb-4 md:mb-12">
+                            Our Services
+                        </h2>
+                        <ul
+                            class="text-[15px] sm:text-base md:text-[13px] 3xl:text-[15px] fhd:text-lg flex flex-col gap-2 text-old-silver">
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">UI/UX
+                                    Design</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Free
+                                    Delivery</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2"
+                                    href="#">E-Commerce</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Marketing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container grid md:grid-cols-2 md:items-center py-8.75 md:py-3.75 px-[3.5%] md:px-10 fhd:pt-5">
+                <div
+                    class="social-icons border-b border-black/8 md:border-0 pb-2.5 mb-2.5 md:pb-0 md:mb-0 lg:pl-2 xl:pl-5 2xl:pl-21.75 fhd:pl-[6%]">
+                    <ul class="flex gap-3 md:gap-6 list-none justify-center md:justify-start">
+                        <li>
+                            <a href="#" aria-label="X icon" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.15275 5.92804L13.2525 0H12.044L7.61591 5.14724L4.07919 0H0L5.34821 7.78354L0 14H1.20855L5.88474 8.56434L9.61978 14H13.699L8.15245 5.92804H8.15275ZM6.49748 7.85211L5.95559 7.07705L1.644 0.909771H3.50026L6.97976 5.88696L7.52165 6.66202L12.0446 13.1316H10.1883L6.49748 7.85241V7.85211Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Linkedin icon" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2226_2378)">
+                                        <path
+                                            d="M2.02234 0.710938C1.05992 0.710938 0.430664 1.34291 0.430664 2.17356C0.430664 2.98586 1.04117 3.63586 1.98541 3.63586H2.00368C2.98493 3.63586 3.5956 2.98586 3.5956 2.17356C3.57725 1.34291 2.98493 0.710938 2.02234 0.710938Z"
+                                            fill="currentColor" />
+                                        <path d="M0.596924 4.7915H3.4105V13.2563H0.596924V4.7915Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M10.3165 4.59277C8.79872 4.59277 7.78094 6.01903 7.78094 6.01903V4.79144H4.96729V13.2562H7.78078V8.52915C7.78078 8.27609 7.79913 8.02343 7.87347 7.84246C8.07686 7.33714 8.53973 6.81363 9.31702 6.81363C10.3351 6.81363 10.7423 7.58988 10.7423 8.72782V13.2562H13.5557V8.40266C13.5557 5.80265 12.1675 4.59277 10.3165 4.59277Z"
+                                            fill="currentColor" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2226_2378">
+                                            <rect width="14" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Instagram icon" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2226_1494)">
+                                        <path
+                                            d="M13.9864 4.11604C13.9536 3.37216 13.8333 2.86076 13.661 2.41762C13.4832 1.94723 13.2097 1.5261 12.8514 1.17601C12.5013 0.820473 12.0774 0.544204 11.6124 0.369213C11.1667 0.196892 10.658 0.0765988 9.91413 0.0438013C9.1647 0.00822609 8.92679 0 7.02603 0C5.12526 0 4.88735 0.00822609 4.1407 0.0410236C3.39682 0.0738212 2.88542 0.194221 2.44238 0.366435C1.97189 0.544204 1.55076 0.817695 1.20067 1.17601C0.845131 1.5261 0.568969 1.95001 0.393871 2.41495C0.22155 2.86076 0.101257 3.36939 0.0684595 4.11326C0.0328843 4.86269 0.0246582 5.10061 0.0246582 7.00137C0.0246582 8.90213 0.0328843 9.14005 0.0656818 9.8867C0.0984794 10.6306 0.218879 11.142 0.3912 11.5851C0.568969 12.0555 0.845131 12.4766 1.20067 12.8267C1.55076 13.1823 1.97467 13.4585 2.4396 13.6335C2.88542 13.8058 3.39405 13.9261 4.13803 13.9589C4.88457 13.9918 5.12259 14 7.02336 14C8.92412 14 9.16203 13.9918 9.90868 13.9589C10.6526 13.9261 11.164 13.8058 11.607 13.6335C12.5479 13.2698 13.2917 12.5259 13.6555 11.5851C13.8277 11.1393 13.9481 10.6306 13.9809 9.8867C14.0137 9.14005 14.0219 8.90213 14.0219 7.00137C14.0219 5.10061 14.0192 4.86269 13.9864 4.11604ZM12.7256 9.832C12.6955 10.5157 12.5807 10.8849 12.4849 11.1311C12.2497 11.741 11.7656 12.225 11.1557 12.4603C10.9096 12.556 10.5377 12.6709 9.85666 12.7009C9.11823 12.7338 8.89677 12.7419 7.0288 12.7419C5.16084 12.7419 4.9366 12.7338 4.20084 12.7009C3.51712 12.6709 3.1479 12.556 2.90176 12.4603C2.59825 12.3481 2.32198 12.1703 2.09774 11.9379C1.86527 11.7109 1.6875 11.4374 1.57533 11.1339C1.47961 10.8877 1.36476 10.5157 1.33474 9.83478C1.30184 9.09635 1.29372 8.87478 1.29372 7.00682C1.29372 5.13885 1.30184 4.91461 1.33474 4.17896C1.36476 3.49524 1.47961 3.12602 1.57533 2.87988C1.6875 2.57626 1.86527 2.3001 2.10052 2.07575C2.32743 1.84329 2.60092 1.66552 2.90454 1.55345C3.15068 1.45773 3.52267 1.34288 4.20362 1.31276C4.94205 1.27996 5.16362 1.27173 7.03147 1.27173C8.90222 1.27173 9.12368 1.27996 9.85943 1.31276C10.5432 1.34288 10.9124 1.45773 11.1585 1.55345C11.462 1.66552 11.7383 1.84329 11.9625 2.07575C12.195 2.30277 12.3728 2.57626 12.4849 2.87988C12.5807 3.12602 12.6955 3.49791 12.7256 4.17896C12.7584 4.91739 12.7667 5.13885 12.7667 7.00682C12.7667 8.87478 12.7584 9.09357 12.7256 9.832Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M7.02585 3.40479C5.04037 3.40479 3.42944 5.0156 3.42944 7.00119C3.42944 8.98678 5.04037 10.5976 7.02585 10.5976C9.01144 10.5976 10.6223 8.98678 10.6223 7.00119C10.6223 5.0156 9.01144 3.40479 7.02585 3.40479ZM7.02585 9.33409C5.73777 9.33409 4.69295 8.28938 4.69295 7.00119C4.69295 5.71301 5.73777 4.66829 7.02585 4.66829C8.31403 4.66829 9.35875 5.71301 9.35875 7.00119C9.35875 8.28938 8.31403 9.33409 7.02585 9.33409Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M11.6043 3.26294C11.6043 3.72659 11.2284 4.10253 10.7646 4.10253C10.301 4.10253 9.92505 3.72659 9.92505 3.26294C9.92505 2.79918 10.301 2.42334 10.7646 2.42334C11.2284 2.42334 11.6043 2.79918 11.6043 3.26294Z"
+                                            fill="currentColor" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2226_1494">
+                                            <rect width="14" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Behance icon" class="social-icon">
+                                <svg width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.65015 3.96391C5.65015 3.96391 6.97486 3.86556 6.97486 2.31171C6.97486 0.758001 5.89098 0 4.5179 0H1.99065H1.91641H0V8.68245H1.91641H1.99065H4.5179C4.5179 8.68245 7.2759 8.76969 7.2759 6.11983C7.27605 6.11983 7.39632 3.96391 5.65015 3.96391ZM1.99065 1.54333H4.19275H4.51805C4.51805 1.54333 5.13225 1.54333 5.13225 2.44659C5.13225 3.34985 4.77086 3.48078 4.36139 3.48078H1.99065V1.54333ZM4.40143 7.13956H1.99065V4.81909H4.5179C4.5179 4.81909 5.43329 4.80739 5.43329 6.01155C5.43329 7.01564 4.76385 7.12948 4.40143 7.13956Z"
+                                        fill="currentColor" />
+                                    <path d="M9.08667 0.51123H12.669V1.5805H9.08667V0.51123Z" fill="currentColor" />
+                                    <path
+                                        d="M10.9544 2.20947C7.61552 2.20947 7.61844 5.54514 7.61844 5.54514C7.61844 5.54514 7.38959 8.8643 10.9546 8.8643C10.9546 8.8643 13.9256 9.03411 13.9256 6.55523H12.3976C12.3976 6.55523 12.4486 7.48917 11.0056 7.48917C11.0056 7.48917 9.47771 7.59132 9.47771 5.97814H13.9765C13.9765 5.97814 14.4687 2.20947 10.9544 2.20947ZM12.3126 4.81929H9.46047C9.46047 4.81929 9.64708 3.48099 10.9883 3.48099C12.3297 3.48084 12.3126 4.81929 12.3126 4.81929Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Dribble icon" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0C3.14562 0 0 3.1459 0 7C0 10.8544 3.1459 14 7 14C10.8544 14 14 10.8541 14 7C14 3.14562 10.8541 0 7 0ZM11.748 3.0491C12.6219 4.09746 13.1554 5.43867 13.1783 6.90156C12.0829 6.64535 10.8664 6.62813 9.62746 6.85398C9.30508 6.91277 8.9827 6.98742 8.66223 7.07711C8.55559 6.78699 8.44238 6.49934 8.32207 6.21441C8.1993 5.92375 8.06969 5.63801 7.93406 5.35637C9.41035 4.79254 11.01 3.95309 11.748 3.0491ZM7 0.820312C8.60836 0.820312 10.0748 1.43801 11.1754 2.44836C10.7461 3.03379 9.52273 3.88609 7.56 4.62109C6.87477 3.34523 6.05309 2.17273 5.10371 1.11836C5.70145 0.925039 6.33883 0.820312 7 0.820312ZM4.2916 1.44648C5.25984 2.48363 6.09273 3.64191 6.77879 4.89316C4.73676 5.55406 2.6693 5.82367 0.969336 5.64949C1.38332 3.79969 2.62883 2.26051 4.2916 1.44648ZM0.820312 7C0.820312 6.81844 0.828789 6.63879 0.844102 6.46133C1.21926 6.50098 1.61055 6.52094 2.01496 6.52094C3.60992 6.52094 5.40176 6.21414 7.16133 5.63145C7.42984 6.18105 7.67129 6.74652 7.8843 7.32594C7.19824 7.57258 6.53051 7.88621 5.90352 8.25945C4.36625 9.17465 3.2416 10.3521 2.77512 11.5054C1.57281 10.3772 0.820312 8.77488 0.820312 7ZM7 13.1797C5.67957 13.1797 4.45457 12.7632 3.44914 12.0548C3.76086 11.0015 4.81523 9.86207 6.32324 8.96437C6.85453 8.64773 7.47578 8.34941 8.15199 8.10688C8.63133 9.61352 8.925 11.2038 9.01824 12.8409C8.38551 13.0602 7.70656 13.1797 7 13.1797ZM9.81832 12.4988C9.70457 10.9041 9.40762 9.35156 8.93102 7.86023C10.2599 7.49492 11.7359 7.37242 13.1357 7.73555C12.8879 9.81394 11.605 11.5793 9.81832 12.4988Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="copyright-text flex justify-center md:justify-end lg:pr-2 xl:pr-5 2xl:pr-21 3xl:pr-18.75 fhd:pr-[6%]">
+                    <p class="font-manrope text-sm text-old-silver">
+                        &copy; Copyright 2026 MonirulSupDev,Inc Satkhira.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+        <!-- Back to Top Button -->
+        <button aria-label="Back to top" id="backToTop"
+            class="fixed bottom-6 right-6 z-40 flex size-12 translate-y-20 opacity-0 items-center justify-center rounded-full bg-[#745EFF] text-white shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-[#4a30f5]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+        </button>
+    </div>
+
+    <script src="src/js/jquery-4.0.0.min.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
+
+    <!-- Fancybox popup -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js" defer></script>
+
+    <script src="src/js/main.js" defer></script>
+</body>
+
+</html>

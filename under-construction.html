@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-whiz</title>
+    <link rel="shortcut icon" href="src/img/fav/fav-02.png" type="image/x-icon" />
+
+    <!-- Remixicon icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <!-- Fancybox popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="relative">
+    <div
+        class="absolute inset-0 bg-[url('/src/img/bg/transparent-bg.png')] bg-repeat bg-auto bg-center opacity-5 -z-10">
+    </div>
+    <!-- Preloader..... -->
+    <div id="pageLoader"
+        class="fixed inset-0 z-9999 flex flex-col items-center justify-center gap-4 bg-gray-700 transition-opacity duration-500">
+        <!-- Logo -->
+        <h2 class="text-2xl font-bold text-gray-200 flex items-center gap-3">
+            <img src="src/img/fav/webwhiz.png" alt="loader logo" /> WebWhiz
+        </h2>
+        <!-- Loader -->
+        <div class="loader"></div>
+    </div>
+
+    <div class="container flex flex-col items-center p-20 mt-12 border border-black/10">
+        <span class="text-2xl font-semibold block">The page is......</span>
+        <img class="w-[clamp(48px,20vw,384px)] h-auto" src="src/img/icon/setting.png" alt="icon" />
+        <h1 class="text-[clamp(30px,3.125vw,60px)] font-bold">
+            Under Construction!
+        </h1>
+        <a class="bg-indigo-600 text-white font-semibold text-lg mt-5 px-4 py-2 rounded-lg hover:bg-indigo-700"
+            href="index.html">Go to Home</a>
+    </div>
+
+    <script src="src/js/jquery-4.0.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Fancybox popup -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>

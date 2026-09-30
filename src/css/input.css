@@ -1,0 +1,461 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/src/font/RedHatDisplay-VariableFont_wght.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/src/font/RedHatDisplay-Italic-VariableFont_wght.woff2")
+    format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("/src/font/Manrope-VariableFont_wght.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Container padding:- desktop:24px, md-device: 20px, small-device:16px */
+
+/* Custom css */
+
+/* THEME */
+@theme {
+  --font-red-hat: "Red Hat Display", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --color-primary: #94e00d;
+  --color-old-silver: #666666;
+
+  /* Container breakpints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+  --breakpoint-3xl: 1600px;
+  --breakpoint-fhd: 1920px;
+
+  /* Custom animations */
+  --animate-loader:
+    l3-1 1.5s linear infinite alternate,
+    l3-2 0.75s cubic-bezier(0, 200, 0.8, 200) infinite;
+
+  --animate-fade-in: fade-in 0.8s ease-out both;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out both;
+  --animate-fade-in-down: fade-in-down 0.8s ease-out both;
+  --animate-fade-in-left: fade-in-left 0.8s ease-out both;
+  --animate-fade-in-right: fade-in-right 0.8s ease-out both;
+
+  --animate-fade-out: fade-out 0.8s ease-in both;
+
+  --animate-slide-in-up: slide-in-up 0.8s ease-out both;
+  --animate-slide-in-down: slide-in-down 0.8s ease-out both;
+  --animate-slide-in-left: slide-in-left 0.8s ease-out both;
+  --animate-slide-in-right: slide-in-right 0.8s ease-out both;
+
+  --animate-zoom-in: zoom-in 0.8s ease-out both;
+  --animate-zoom-out: zoom-out 0.8s ease-out both;
+
+  --animate-scale-in: scale-in 0.8s ease-out both;
+
+  --animate-bounce-in: bounce-in 1s ease-out both;
+
+  --animate-rotate-in: rotate-in 0.8s ease-out both;
+
+  --animate-flip-in-x: flip-in-x 0.8s ease-out both;
+  --animate-flip-in-y: flip-in-y 0.8s ease-out both;
+
+  --animate-float: float 3s ease-in-out infinite;
+
+  --animate-marquee: marquee 30s linear infinite;
+
+  /* Keyframes */
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  /* Slide */
+
+  @keyframes slide-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Zoom */
+
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes zoom-out {
+    from {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Bounce */
+
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    70% {
+      transform: scale(0.9);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Rotate */
+
+  @keyframes rotate-in {
+    from {
+      opacity: 0;
+      transform: rotate(-180deg) scale(0.7);
+    }
+
+    to {
+      opacity: 1;
+      transform: rotate(0) scale(1);
+    }
+  }
+
+  /* Flip */
+
+  @keyframes flip-in-x {
+    from {
+      opacity: 0;
+      transform: perspective(400px) rotateX(90deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: perspective(400px) rotateX(0);
+    }
+  }
+
+  @keyframes flip-in-y {
+    from {
+      opacity: 0;
+      transform: perspective(400px) rotateY(90deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: perspective(400px) rotateY(0);
+    }
+  }
+
+  /* Float */
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Marquee */
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Pre loader */
+  @keyframes l3-1 {
+    100% {
+      left: calc(100% - 8px);
+    }
+  }
+  @keyframes l3-2 {
+    100% {
+      top: -0.1px;
+    }
+  }
+}
+/* Reduce Motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}
+
+/* BASE */
+@layer base {
+  body {
+    @apply text-lg font-red-hat;
+  }
+  section {
+    @apply [content-visibility:auto] [contain-intrinsic-size:0_500px];
+  }
+  button {
+    @apply cursor-pointer;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: currentColor;
+    transition: background-color 9999s ease-out 0s;
+  }
+}
+
+/* COMPONENTS */
+@layer components {
+  .red-hat-display-fnt {
+    @apply font-red-hat;
+  }
+  .manrope-fnt {
+    @apply font-manrope;
+  }
+  .header-fixed {
+    @apply top-0 left-0 right-0 z-50 bg-[#171717] shadow-2xl w-full;
+  }
+  .header-fixed-2 {
+    @apply top-0 left-0 right-0 z-50 bg-white shadow-xl w-full;
+  }
+  .bg-letter {
+    @apply hidden xl:block absolute text-[300px] xl:text-[200px] fhd:text-[300px] leading-[120%] font-bold text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.04)] opacity-80 pointer-events-none select-none;
+  }
+  .about-item {
+    @apply text-center border border-white/8 rounded-[200px] py-6 px-7;
+  }
+  .blog-text {
+    @apply uppercase font-bold text-transparent fhd:text-[110px] md:text-[50px] leading-[110%] [-webkit-text-stroke:2px_rgba(0,0,0,0.08)] rotate-270 top-1/2 -translate-y-1/2;
+  }
+  .form-label {
+    @apply text-[16px] md:text-sm absolute top-1/2 -translate-y-1/2;
+  }
+  .form-input {
+    @apply border-b md:text-sm border-b-white/8 w-full h-12.5 md:h-10 outline-none bg-transparent autofill:bg-transparent [-webkit-text-fill-color:#fff];
+  }
+  .social-icon {
+    @apply flex justify-center items-center text-[#3C3C3F] w-8 h-8 rounded-full bg-[#3C3C3F]/10 hover:bg-[#745eff] hover:text-white transition duration-200;
+  }
+  .portfolio-tab.active {
+    @apply text-white bg-indigo-600 shadow-[0_0_25px_rgba(108,85,255,0.6),0_0_50px_rgba(108,85,255,0.35)];
+  }
+
+  /* Pre loader */
+  .loader {
+    @apply relative w-10 h-6.5 bg-[linear-gradient(#fff_0_0),linear-gradient(#fff_0_0),linear-gradient(#fff_0_0)] bg-size-[8px_calc(100%-4px)] bg-position-[0_100%,50%_100%,100%_100%] bg-no-repeat
+    before:content-[''] before:absolute before:w-2 before:h-2 before:rounded-full before:bg-white before:left-0 before:top-0 before:animate-loader;
+  }
+}
+
+/* UTILITIES */
+@layer utilities {
+  .container {
+    /* base/xs */
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 16px;
+
+    /* sm */
+    @media (min-width: 576px) {
+      max-width: 572px;
+      padding-inline: 16px;
+    }
+
+    /* md */
+    @media (min-width: 768px) {
+      max-width: 760px;
+      padding-inline: 20px;
+    }
+
+    /* lg */
+    @media (min-width: 992px) {
+      max-width: 1000px;
+      padding-inline: 20px;
+    }
+
+    /* xl */
+    @media (min-width: 1200px) {
+      max-width: 1188px;
+      padding-inline: 24px;
+    }
+
+    /* 2xl */
+    @media (min-width: 1400px) {
+      max-width: 1368px;
+      padding-inline: 24px;
+    }
+
+    /* 3xl */
+    @media (min-width: 1600px) {
+      max-width: 1488px;
+      padding-inline: 24px;
+    }
+
+    /* fhd */
+    @media (min-width: 1920px) {
+      max-width: 1488px;
+      padding-inline: 24px;
+    }
+  }
+}

@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Our landing page is your gateway to a captivating digital experience." />
+    <title>web-whiz</title>
+    <link rel="shortcut icon" href="src/img/fav/fav-02.png" type="image/x-icon" />
+
+    <!-- Remixicon icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" media="print"
+        onload="this.media = 'all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    </noscript>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" media="print"
+        onload="this.media = 'all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    </noscript>
+
+    <!-- Fancybox popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css" media="print"
+        onload="this.media = 'all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css" />
+    </noscript>
+
+    <link rel="preload" as="image" href="/src/img/bg/hero-bg-01.jpg" fetchpriority="high" />
+    <link rel="preload" as="image" href="/src/img/bg/transparent-bg.png" fetchpriority="high" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="relative">
+    <div
+        class="absolute inset-0 bg-[url('/src/img/bg/transparent-bg.png')] bg-repeat bg-auto bg-center opacity-5 -z-10">
+    </div>
+    <!-- Preloader..... -->
+    <div id="pageLoader"
+        class="fixed inset-0 z-9999 flex flex-col items-center justify-center gap-4 bg-gray-700 transition-opacity duration-500">
+        <!-- Logo -->
+        <h2 class="text-2xl font-bold text-gray-200 flex items-center gap-3">
+            <img src="src/img/fav/webwhiz.png" alt="loader logo" /> WebWhiz
+        </h2>
+        <!-- Loader -->
+        <div class="loader"></div>
+    </div>
+
+    <div class="page-container relative mx-auto border-black/10">
+        <!-- Vertical lines -->
+        <div class="pointer-events-none absolute inset-0 grid grid-cols-8 -z-10">
+            <div class="border-r border-black/8 mr-8.5 md:mr-[81%] lg:mr-[36%] 2xl:mr-[9%] 3xl:mr-[18%] fhd:mr-[-12%]">
+            </div>
+            <div></div>
+            <div></div>
+            <div class="md:border-r md:border-black/8"></div>
+            <div></div>
+            <div></div>
+            <div
+                class="border-r border-black/8 -mr-8.5 md:mr-[-81%] lg:mr-[-36%] 2xl:mr-[-9%] 3xl:mr-[-24%] fhd:mr-[12%]">
+            </div>
+            <div></div>
+        </div>
+
+        <!-- Header start -->
+        <header id="header">
+            <div id="sticky-header-2"
+                class="fixed top-0 left-0 right-0 fhd:px-37 3xl:max-w-full 3xl:px-12.5 2xl:max-w-372.5 mx-auto flex justify-between px-4 md:px-6 items-cente py-4.75 xl:py-7 3xl:py-8.25 z-20">
+                <div class="min-w-28.5 md:w-1/10 flex items-center">
+                    <a href="#"><img src="src/img/logo/logo-black.png" alt="Website logo" /></a>
+                </div>
+                <div class="header-menu w-full lg:pl-9 2xl:pl-21 2xl:pr-15 hidden lg:flex flex-col justify-center">
+                    <nav>
+                        <ul class="list-none flex justify-between manrope-fnt text-sm font-medium text-black/60">
+                            <li>
+                                <ul class="list-none flex gap-7">
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="portfolio.html">
+                                            Portfolio
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="index.html#about">
+                                            About us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-none flex gap-7">
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="index.html#services">
+                                            Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition"
+                                            href="index.html#testimonial">
+                                            Testimonials
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="uppercase hover:text-primary transition" href="blog.html">Blog</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="w-1/10 flex justify-end">
+                    <button id="offcanvasBtn" aria-label="Offcanvas button"
+                        class="border border-black/8 rounded-[200px] p-2.5 text-black hover:text-primary transition">
+                        <svg aria-hidden="true" width="18" height="12" viewBox="0 0 18 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 0.75H17.25M0.75 6H17.25M9 11.25H17.25" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Offcanvas start -->
+        <!-- Overlay -->
+        <div id="overlay" class="fixed inset-0 z-40 hidden bg-black/50"></div>
+
+        <!-- Offcanvas -->
+        <div id="offcanvas"
+            class="fixed top-0 right-0 z-50 h-screen w-80 translate-x-full bg-slate-900 shadow-2xl transition-transform duration-300 ease-in-out">
+            <!-- Offcanvas Header -->
+            <div class="flex items-center justify-between border-b border-b-white/50 p-5">
+                <a href="#"><img src="src/img/logo/logo.png" alt="Logo" /></a>
+
+                <button id="closeBtn" class="text-2xl leading-none text-white hover:text-red-500"
+                    aria-label="Close button">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+
+            <!-- Offcanvas Content -->
+            <div class="mt-9 px-6 hidden lg:block">
+                <h2 class="text-2xl font-bold text-center text-white mb-4">
+                    Hello there...
+                </h2>
+                <h3 class="text-4xl font-bold text-center text-white tracking-widest">
+                    Welcome!
+                </h3>
+                <div class="grid grid-cols-2 gap-4 mt-10">
+                    <img class="w-32 h-25 object-cover" src="src/img/gallery/blog-01.jpg" alt="Gallery image" />
+                    <img class="w-32 h-25 object-cover" src="src/img/gallery/blog-02.jpg" alt="Gallery image" />
+                    <img class="w-32 h-25 object-cover" src="src/img/gallery/blog-03.jpg" alt="Gallery image" />
+                    <img class="w-32 h-25 object-cover" src="src/img/gallery/blog-04.jpg" alt="Gallery image" />
+                </div>
+                <p class="text-white mt-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                    architecto ab aliquam voluptatem cum veritatis!
+                </p>
+            </div>
+            <nav class="p-5 lg:hidden">
+                <ul class="space-y-3 text-white">
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="index.html#about">About Us</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="index.html#service">Services</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="index.html#testimonial">Testimonials</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                    <li class="hover:text-primary hover:translate-x-2 transition duration-150 cursor-pointer">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="border-b border-gray-300"></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Offcanvas end -->
+
+        <main class="relative z-10">
+            <!-- Portfolio preview section start -->
+            <section class="portfolio-preview-section pt-31 md:pt-28 lg:pt-36.5 xl:pb-6 3xl:pt-51.25 3xl:pb-20">
+                <!-- Horizontal line -->
+                <div class="pointer-events-none absolute inset-0 h-18 xl:h-22.5 3xl:h-25 border-b border-b-black/8">
+                </div>
+                <div class="portfolio-title lg:max-w-137.5 xl:max-w-3xl mx-auto text-center animate-on-scroll delay-200 duration-500"
+                    data-animation="fade-in-up">
+                    <h2
+                        class="text-[clamp(26px,calc(2.46vw+16.78px),64px)] font-bold leading-[140%] md:leading-[110%] mb-6">
+                        <span class="text-primary">Landing Page</span> Design
+                    </h2>
+                    <p class="text-base md:text-sm lg:text-base xl:text-lg 3xl:text-xl leading-[160%] text-old-silver">
+                        Welcome to our world of exceptional design and innovation! Our
+                        landing page is your gateway to a captivating digital experience.
+                    </p>
+                </div>
+                <div class="portfolio-img relative mt-10 3xl:mt-20">
+                    <img src="src/img/portfolio/portfolio-preview.jpg" fetchpriority="high" alt="Portfolio image" />
+                    <img class="absolute w-[17%] sm:w-[11%] top-[-16%] sm:top-[-11%] 3xl:top-[-11%] right-[15%]"
+                        src="src/img/project/project-logo.png" alt="Project logo" />
+                </div>
+            </section>
+            <!-- Portfolio preview section end -->
+
+            <!-- About project section start -->
+            <section class="about-project-section py-10 3xl:py-20 relative">
+                <h2
+                    class="hidden xl:block uppercase font-bold text-transparent fhd:text-[120px] md:text-[50px] leading-[110%] [-webkit-text-stroke:2px_rgba(0,0,0,0.08)] rotate-270 absolute xl:-right-15 fhd:-right-52 top-1/2 -translate-y-1/2">
+                    OVERVIEW
+                </h2>
+                <div class="container">
+                    <div class="grid md:grid-cols-2">
+                        <div class="about-content mb-7.5 md:mb-0">
+                            <h2
+                                class="text-[clamp(28px,calc(19.26px+2.33vw),64px)] font-bold leading-[140%] md:leading-[110%]">
+                                About the <span class="text-primary">Project</span>
+                            </h2>
+                            <div class="mt-9">
+                                <div class="about-box">
+                                    <h3
+                                        class="text-xl md:text-[15px] lg:text-base 3xl:text-2xl font-semibold text-[#171717]">
+                                        Project Name
+                                    </h3>
+                                    <p class="text-base md:text-xs lg:text-sm xl:text-base text-old-silver mt-1.5">
+                                        VividVue Gateway to Engagement
+                                    </p>
+                                </div>
+                                <div class="about-box mt-6">
+                                    <h3
+                                        class="text-xl md:text-[15px] lg:text-base 3xl:text-2xl font-semibold text-[#171717]">
+                                        Project Description
+                                    </h3>
+                                    <p class="text-base md:text-xs lg:text-sm xl:text-base text-old-silver mt-1.5">
+                                        VividVue is an immersive landing page design initiative
+                                        dedicated to serving as the gateway to user engagement.
+                                        With vibrant visuals, intuitive navigation, and a focus on
+                                        user interaction, VividVue transforms ordinary landing
+                                        pages into dynamic platforms that invite users to explore,
+                                        connect, and convert. Through meticulous design elements,
+                                        storytelling.
+                                    </p>
+                                </div>
+                                <div class="about-box mt-6">
+                                    <h3
+                                        class="text-xl md:text-[15px] lg:text-base 3xl:text-2xl font-semibold text-[#171717]">
+                                        Technologies and Tools Used
+                                    </h3>
+                                    <p class="text-base md:text-xs lg:text-sm xl:text-base text-old-silver mt-1.5">
+                                        For the execution of this landing page design project, we
+                                        employed a sophisticated array of tools and technologies
+                                        to ensure a seamless and visually stunning user
+                                        experience. The cornerstone of our design process was
+                                        <b class="text-[#171717]">Figma</b>, a collaborative
+                                        interface design tool that enabled our team to ideate,
+                                        prototype, and iterate in real-time.
+                                    </p>
+                                </div>
+                                <div class="about-box mt-6">
+                                    <h3
+                                        class="text-xl md:text-[15px] lg:text-base 3xl:text-2xl font-semibold text-[#171717]">
+                                        Lessons we Learned
+                                    </h3>
+                                    <p class="text-base md:text-xs lg:text-sm xl:text-base text-old-silver mt-1.5">
+                                        Reflecting on the journey of the landing page design
+                                        project, we gleaned valuable lessons that have fortified
+                                        our approach to future endeavors. One significant takeaway
+                                        was the paramount importance of user feedback and
+                                        iterative testing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fact grid justify-center md:justify-normal gap-6 md:pl-10 3xl:pl-20">
+                            <div class="about-item md:max-w-58.5 lg:max-w-75 3xl:max-w-97.5 border border-[#E3E3E3] animate-on-scroll delay-200 duration-700"
+                                data-animation="fade-in-up">
+                                <h3
+                                    class="text-[26px] md:text-[32px] lg:text-[42px] 3xl:text-[56px] leading-[120%] font-bold inline-block">
+                                    12k
+                                </h3>
+                                <span class="uppercase text-xs md:text-[10px] lg:text-base">
+                                    &nbsp;plus</span>
+                                <p
+                                    class="capitalize text-xl md:text-base lg:text-lg 3xl:text-xl font-semibold leading-[160%]">
+                                    Client Satisfaction
+                                </p>
+                                <p
+                                    class="text-base md:text-[11px] lg:text-sm 3xl:text-base leading-[160%] text-old-silver">
+                                    Client satisfaction drove every step of our landing page
+                                    project
+                                </p>
+                            </div>
+                            <div class="about-item md:max-w-58.5 lg:max-w-75 3xl:max-w-97.5 border border-[#E3E3E3] relative left-1/2 -translate-x-1/2 animate-on-scroll delay-200 duration-700"
+                                data-animation="fade-in-up">
+                                <h3
+                                    class="text-[26px] md:text-[32px] lg:text-[42px] 3xl:text-[56px] leading-[120%] font-bold inline-block">
+                                    120%
+                                </h3>
+                                <span class="uppercase text-xs md:text-[10px] lg:text-base">
+                                    &nbsp;plus</span>
+                                <p
+                                    class="capitalize text-xl md:text-base lg:text-lg 3xl:text-xl font-semibold leading-[160%]">
+                                    Monthly Success Rate
+                                </p>
+                                <p
+                                    class="text-base md:text-[11px] lg:text-sm 3xl:text-base leading-[160%] text-old-silver">
+                                    Project demonstrated consistent and notable achievements.
+                                </p>
+                            </div>
+                            <div class="about-item md:max-w-58.5 lg:max-w-75 3xl:max-w-97.5 border border-[#E3E3E3] animate-on-scroll delay-200 duration-700"
+                                data-animation="fade-in-up">
+                                <h3
+                                    class="text-[26px] md:text-[32px] lg:text-[42px] 3xl:text-[56px] leading-[120%] font-bold inline-block">
+                                    600
+                                </h3>
+                                <span class="uppercase text-xs md:text-[10px] lg:text-base">
+                                    &nbsp;plus</span>
+                                <p
+                                    class="capitalize text-xl md:text-base lg:text-lg 3xl:text-xl font-semibold leading-[160%]">
+                                    Daily Visitors
+                                </p>
+                                <p
+                                    class="text-base md:text-[11px] lg:text-sm 3xl:text-base leading-[160%] text-old-silver">
+                                    Attracted a robust daily visitor count throughout the
+                                    project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About project section end -->
+
+            <!-- Work showcase section start -->
+            <section class="work-showcase-section py-10 3xl:py-20">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="text-center mb-12 md:mb-20">
+                        <!-- Title -->
+                        <h2 class="text-[clamp(28px,5vw,64px)] font-bold leading-[1.1] mb-8 animate-on-scroll duration-500"
+                            data-animation="fade-in-up">
+                            Work <span class="text-primary">Showcase</span>
+                        </h2>
+
+                        <!-- Tabs -->
+                        <div class="inline-flex max-w-full border border-indigo-600 text-indigo-600 rounded-none overflow-x-auto animate-on-scroll duration-500 delay-200"
+                            data-animation="fade-in-up">
+                            <button
+                                class="portfolio-tab active w-27 lg:w-48.5 h-13.5 lg:h-18 whitespace-nowrap text-base md:text-lg font-medium relative transition-all duration-300"
+                                data-filter="all">
+                                All
+                            </button>
+
+                            <button
+                                class="portfolio-tab w-27 lg:w-48.5 h-13.5 lg:h-18 whitespace-nowrap text-base md:text-lg font-medium relative transition-all duration-300"
+                                data-filter="month">
+                                This Month
+                            </button>
+
+                            <button
+                                class="portfolio-tab w-27 lg:w-48.5 h-13.5 lg:h-18 whitespace-nowrap text-base md:text-lg font-medium relative transition-all duration-300"
+                                data-filter="recent">
+                                Recent work
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-9 3xl:gap-y-18.5">
+                        <!-- Portfolio Item -->
+                        <article
+                            class="portfolio-item flex flex-col justify-between bg-white overflow-hidden border border-black/8"
+                            data-category="all month">
+                            <div class="p-4 lg:p-7.5">
+                                <h3
+                                    class="text-black text-[clamp(26px,calc(21.63px+1.165vw),44px)] font-semibold leading-[1.2] mb-5">
+                                    <a class="hover:text-indigo-600" href="#">Purpose and Goals</a>
+                                </h3>
+                                <p class="text-old-silver text-base md:text-xs 3xl:text-xl leading-[1.6]">
+                                    Clearly communicate who you are, what you do, and what sets
+                                    you apart. Use a concise headline and subheading that
+                                    highlight your unique skills or expertise.
+                                </p>
+                            </div>
+                            <div class="aspect-[auto_16/5] overflow-hidden">
+                                <a href="#"><img src="src/img/portfolio/portfolio-showcase-4.jpg"
+                                        alt="Purpose and Goals" class="w-full" /></a>
+                            </div>
+                        </article>
+
+                        <!-- Portfolio Item -->
+                        <article
+                            class="portfolio-item flex flex-col justify-between bg-white overflow-hidden border border-black/8"
+                            data-category="all recent">
+                            <div class="p-4 lg:p-7.5">
+                                <h3
+                                    class="text-black text-[clamp(26px,calc(21.63px+1.165vw),44px)] font-semibold leading-[1.2] mb-5">
+                                    <a class="hover:text-indigo-600" href="#">Professional Introduction</a>
+                                </h3>
+
+                                <p class="text-old-silver text-base md:text-xs 3xl:text-xl leading-[1.6]">
+                                    Include a professional and friendly introduction about
+                                    yourself. Briefly mention your background, experience, and
+                                    passion for your work. And unique skills or expertise.
+                                </p>
+                            </div>
+
+                            <div class="aspect-[auto_16/5] overflow-hidden">
+                                <a href="#"><img src="src/img/portfolio/portfolio-showcase-3.jpg"
+                                        alt="Professional Introduction" class="w-full" /></a>
+                            </div>
+                        </article>
+
+                        <!-- Portfolio Item -->
+                        <article
+                            class="portfolio-item flex flex-col justify-between bg-white overflow-hidden border border-black/8"
+                            data-category="all month">
+                            <div class="p-4 lg:p-7.5">
+                                <h3
+                                    class="text-black text-[clamp(26px,calc(21.63px+1.165vw),44px)] font-semibold leading-[1.2] mb-5">
+                                    <a class="hover:text-indigo-600" href="#">Portfolio Highlights</a>
+                                </h3>
+
+                                <p class="text-old-silver text-base md:text-xs 3xl:text-xl leading-[1.6]">
+                                    Showcase a selection of your best projects or work samples.
+                                    Use high-quality images, and provide a brief description of
+                                    each project, highlighting your role and the skills
+                                    involved.
+                                </p>
+                            </div>
+
+                            <div class="aspect-[auto_16/5] overflow-hidden">
+                                <a href="#"><img src="src/img/portfolio/portfolio-showcase-2.jpg"
+                                        alt="Portfolio Highlights" class="w-full" /></a>
+                            </div>
+                        </article>
+
+                        <!-- Portfolio Item -->
+                        <article
+                            class="portfolio-item flex flex-col justify-between bg-white overflow-hidden border border-black/8"
+                            data-category="all recent">
+                            <div class="p-4 lg:p-7.5">
+                                <h3
+                                    class="text-black text-[clamp(26px,calc(21.63px+1.165vw),44px)] font-semibold leading-[1.2] mb-5">
+                                    <a class="hover:text-indigo-600" href="#">Call-to-Action</a>
+                                </h3>
+                                <p class="text-old-silver text-base md:text-xs 3xl:text-xl leading-[1.6]">
+                                    Include a clear call-to-action, such as View My Portfolio,
+                                    Contact Me, or "Hire Me." Make it easy for visitors to take
+                                    the next step. Regular updates show that you are actively
+                                    engaged in your field.
+                                </p>
+                            </div>
+                            <div class="aspect-[auto_16/5] overflow-hidden">
+                                <a href="#"><img src="src/img/portfolio/portfolio-showcase.jpg" alt="Call-to-Action"
+                                        class="w-full" /></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Work showcase section end -->
+
+            <!-- Contact section start -->
+            <section class="contact-section py-15 fhd:py-32.5 mt-5 3xl:mt-20 bg-cover relative"
+                data-bg-img="src/img/bg/hero-bg-01.jpg">
+                <!-- Vertical lines -->
+                <div class="hidden pointer-events-none absolute inset-0 md:grid grid-cols-8">
+                    <div
+                        class="border-r border-white/8 -mr-8 md:mr-[81%] lg:mr-[36%] 2xl:mr-[9%] 3xl:mr-[18%] fhd:mr-[-12%]">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="border-r border-white/8"></div>
+                    <div></div>
+                    <div></div>
+                    <div
+                        class="border-r border-white/8 mr-6 md:mr-[-81%] lg:mr-[-36%] 2xl:mr-[-9%] 3xl:mr-[-24%] fhd:mr-[12%]">
+                    </div>
+                    <div></div>
+                </div>
+                <h2
+                    class="hidden xl:block uppercase font-bold text-[clamp(77px,4.69vw,90px)] text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.02)] rotate-270 absolute top-[48%] xl:top-[44%] left-[-8.5%] xl:left-[-14.5%] fhd:left-[-8%] pointer-events-none">
+                    Contact Us
+                </h2>
+                <div class="container grid md:grid-cols-2 lg:px-15.75 3xl:px-0">
+                    <div
+                        class="contact-info text-old-silver md:pr-2 xl:pl-18 2xl:pl-35 2xl:pr-5.5 3xl:pr-14 fhd:pl-30.5 fhd:pr-22.75">
+                        <div class="contact-info-top mb-8 md:mb-22.5 animate-on-scroll delay-150"
+                            data-animation="fade-in-up">
+                            <h1
+                                class="text-[clamp(26px,4.17vw,64px)] leading-[140%] md:leading-[110%] text-white font-bold">
+                                Let’s <span class="text-primary">Talk</span>
+                            </h1>
+                            <p class="text-base xl:text-lg">
+                                Have questions, ideas, or simply want to get in touch? We're
+                                here to listen and respond.
+                            </p>
+                        </div>
+                        <div class="contact-info-bottom text-base md:text-lg border border-white/8 rounded-2xl p-8 animate-on-scroll delay-300"
+                            data-animation="slide-in-left">
+                            <div>
+                                <a class="md:text-base flex items-center gap-3 mb-8 hover:drop-shadow-sm hover:drop-shadow-primary transition duration-100"
+                                    href="mailto:monirul0437@gmail.com">
+                                    <svg class="md:size-5" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.667 27.3332H9.33366C5.33366 27.3332 2.66699 25.3332 2.66699 20.6665V11.3332C2.66699 6.6665 5.33366 4.6665 9.33366 4.6665H22.667C26.667 4.6665 29.3337 6.6665 29.3337 11.3332V20.6665C29.3337 25.3332 26.667 27.3332 22.667 27.3332Z"
+                                            stroke="#868686" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M22.6663 12L18.493 15.3333C17.1197 16.4267 14.8663 16.4267 13.493 15.3333L9.33301 12"
+                                            stroke="#868686" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    monirul0437@gmail.com
+                                </a>
+                            </div>
+                            <div>
+                                <a class="md:text-sm flex items-center gap-3 mb-8 hover:drop-shadow-sm hover:drop-shadow-primary transition duration-100"
+                                    href="tel:+8801516776920">
+                                    <svg class="md:size-5" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.3767 22.5233C27.3767 23.0033 27.27 23.4967 27.0433 23.9767C26.8167 24.4567 26.5233 24.91 26.1367 25.3367C25.4833 26.0567 24.7633 26.5767 23.95 26.91C23.15 27.2433 22.2833 27.4167 21.35 27.4167C19.99 27.4167 18.5367 27.0967 17.0033 26.4433C15.47 25.79 13.9367 24.91 12.4167 23.8033C10.8833 22.6833 9.43 21.4433 8.04333 20.07C6.67 18.6833 5.43 17.23 4.32333 15.71C3.23 14.19 2.35 12.67 1.71 11.1633C1.07 9.64333 0.75 8.19 0.75 6.80333C0.75 5.89667 0.91 5.03 1.23 4.23C1.55 3.41667 2.05667 2.67 2.76333 2.00333C3.61667 1.16333 4.55 0.75 5.53667 0.75C5.91 0.75 6.28333 0.83 6.61667 0.99C6.96333 1.15 7.27 1.39 7.51 1.73667L10.6033 6.09667C10.8433 6.43 11.0167 6.73667 11.1367 7.03C11.2567 7.31 11.3233 7.59 11.3233 7.84333C11.3233 8.16333 11.23 8.48333 11.0433 8.79C10.87 9.09667 10.6167 9.41667 10.2967 9.73667L9.28333 10.79C9.13667 10.9367 9.07 11.11 9.07 11.3233C9.07 11.43 9.08333 11.5233 9.11 11.63C9.15 11.7367 9.19 11.8167 9.21667 11.8967C9.45667 12.3367 9.87 12.91 10.4567 13.6033C11.0567 14.2967 11.6967 15.0033 12.39 15.71C13.11 16.4167 13.8033 17.07 14.51 17.67C15.2033 18.2567 15.7767 18.6567 16.23 18.8967C16.2967 18.9233 16.3767 18.9633 16.47 19.0033C16.5767 19.0433 16.6833 19.0567 16.8033 19.0567C17.03 19.0567 17.2033 18.9767 17.35 18.83L18.3633 17.83C18.6967 17.4967 19.0167 17.2433 19.3233 17.0833C19.63 16.8967 19.9367 16.8033 20.27 16.8033C20.5233 16.8033 20.79 16.8567 21.0833 16.9767C21.3767 17.0967 21.6833 17.27 22.0167 17.4967L26.43 20.63C26.7767 20.87 27.0167 21.15 27.1633 21.4833C27.2967 21.8167 27.3767 22.15 27.3767 22.5233Z"
+                                            stroke="#868686" stroke-width="1.5" stroke-miterlimit="10" />
+                                    </svg>
+                                    +880 1516-776920
+                                </a>
+                            </div>
+                            <div class="flex items-center gap-3 mb-8 md:text-base">
+                                <svg class="md:size-5" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0001 17.9064C18.2976 17.9064 20.1601 16.0439 20.1601 13.7464C20.1601 11.4489 18.2976 9.58643 16.0001 9.58643C13.7026 9.58643 11.8401 11.4489 11.8401 13.7464C11.8401 16.0439 13.7026 17.9064 16.0001 17.9064Z"
+                                        stroke="#868686" stroke-width="1.5" />
+                                    <path
+                                        d="M4.8266 11.3198C7.45327 -0.226826 24.5599 -0.213493 27.1733 11.3332C28.7066 18.1065 24.4933 23.8398 20.7999 27.3865C18.1199 29.9732 13.8799 29.9732 11.1866 27.3865C7.5066 23.8398 3.29327 18.0932 4.8266 11.3198Z"
+                                        stroke="#868686" stroke-width="1.5" />
+                                </svg>
+                                Satkhira, Khulna, Bangladesh
+                            </div>
+                            <div class="flex items-center gap-3 md:text-base">
+                                <svg class="md:size-5" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M27.6663 17.6667C27.6663 24.1067 22.4397 29.3333 15.9997 29.3333C9.55967 29.3333 4.33301 24.1067 4.33301 17.6667C4.33301 11.2267 9.55967 6 15.9997 6C22.4397 6 27.6663 11.2267 27.6663 17.6667Z"
+                                        stroke="#868686" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 10.6665V17.3332" stroke="#868686" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 2.6665H20" stroke="#868686" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                24/7 Customer Support
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form flex items-end text-white mt-8 md:mt-0 md:pl-2 xl:pr-18 2xl:pr-35 2xl:pl-5.5 3xl:pl-14 fhd:pl-23 fhd:pr-31.75 animate-on-scroll delay-600"
+                        data-animation="slide-in-right">
+                        <form action="#" class="w-full space-y-7">
+                            <div class="input-group relative">
+                                <label for="name" class="form-label"> Full Name : </label>
+                                <input type="text" id="name" name="name" class="form-input pl-22.5 md:pl-19" />
+                            </div>
+                            <div class="input-group relative">
+                                <label for="email" class="form-label">
+                                    Email Address :
+                                </label>
+                                <input type="email" id="email" name="email" class="form-input pl-29 md:pl-25" />
+                            </div>
+                            <div class="input-group relative">
+                                <label for="message" class="form-label top-[30%]">
+                                    Type Message :
+                                </label>
+                                <textarea name="message" rows="10" id="message"
+                                    class="form-input pl-30 md:pl-26 h-10 md:h-9.5"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="flex items-center justify-center gap-4 text-base md:text-sm leading-relaxed font-semibold bg-[#171717] border border-white/8 w-full py-3.25 group hover:bg-black/30 transition duration-300">
+                                Send Now
+                                <svg class="group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 14.75L14.75 0.75M14.75 11.25V0.75H4.25" stroke="white"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact section end -->
+        </main>
+        <!-- Footer start -->
+        <footer class="mt-22.5 md:mt-12.5 fhd:mt-21.75 lg:px-13.25 relative">
+            <!-- Horizontal line -->
+            <div
+                class="hidden md:block pointer-events-none absolute inset-0 md:h-12 fhd:h-15.75 border-b border-b-black/8">
+            </div>
+            <div
+                class="hidden md:block pointer-events-none absolute inset-0 md:h-63.25 lg:h-63.5 xl:h-62.5 3xl:h-68.5 fhd:h-75.75 border-b border-b-black/8">
+            </div>
+
+            <div class="container grid md:grid-cols-2 mb-5">
+                <div>
+                    <div
+                        class="footer-widget md:pl-0 lg:pl-[2.5%] xl:pl-[5%] 2xl:pl-22.25 md:pr-[12%] 2xl:pr-13.75 fhd:pl-[7%] text-center md:text-left mb-6 md:mb-0">
+                        <h2
+                            class="text-2xl md:text-[15px] fhd:text-2xl 3xl:text-xl font-semibold text-[#171717] mb-6 md:mb-14.5">
+                            Subscribe for newsletter
+                        </h2>
+                        <div
+                            class="input-group bg-white border md:text-[13px] fhd:text-base border-black/8 relative mb-5">
+                            <label for="email"></label>
+                            <input type="email" name="email" placeholder="Enter your Email"
+                                class="form-input h-14 [-webkit-text-fill-color:#666666] p-3.5" />
+                            <button aria-label="Send button" type="submit"
+                                class="bg-[#745EFF] absolute right-0 bottom-0 h-full w-14 flex justify-center items-center hover:bg-[#3316ee] transition duration-200">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 19.5L18 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6 6H18V18" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p
+                            class="text-sm sm:text-[15px] md:text-[13px] 3xl:text-[15px] fhd:text-base leading-[160%] md:leading-[140%] text-old-silver">
+                            Join our community of like-minded individuals who share your
+                            passion and interests.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2">
+                    <div class="footer-widget md:pl-[2%] fhd:pl-[4%] text-center md:text-left mb-5 md:mb-0">
+                        <h2
+                            class="text-2xl md:text-[15px] 3xl:text-xl fhd:text-2xl font-semibold text-[#171717] mb-4 md:mb-12">
+                            Company
+                        </h2>
+                        <ul
+                            class="text-[15px] sm:text-base md:text-[13px] 3xl:text-[15px] fhd:text-lg flex flex-col gap-2 text-old-silver">
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="footer-widget text-center md:text-end md:pr-0 lg:pr-[6%] xl:pr-[10%] 2xl:pr-[28%] 3xl:pr-[22%] fhd:pr-[14%]">
+                        <h2
+                            class="text-2xl md:text-[15px] 3xl:text-xl fhd:text-2xl font-semibold text-[#171717] mb-4 md:mb-12">
+                            Our Services
+                        </h2>
+                        <ul
+                            class="text-[15px] sm:text-base md:text-[13px] 3xl:text-[15px] fhd:text-lg flex flex-col gap-2 text-old-silver">
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">UI/UX
+                                    Design</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Free
+                                    Delivery</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2"
+                                    href="#">E-Commerce</a>
+                            </li>
+                            <li>
+                                <a class="block hover:text-[#745EFF] transition duration-200 p-2" href="#">Marketing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container grid md:grid-cols-2 md:items-center py-8.75 md:py-3.75 px-[3.5%] md:px-10 fhd:pt-5">
+                <div
+                    class="social-icons border-b border-black/8 md:border-0 pb-2.5 mb-2.5 md:pb-0 md:mb-0 lg:pl-2 xl:pl-5 2xl:pl-21.75 fhd:pl-[6%]">
+                    <ul class="flex gap-3 md:gap-6 list-none justify-center md:justify-start">
+                        <li>
+                            <a href="#" aria-label="X icon" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.15275 5.92804L13.2525 0H12.044L7.61591 5.14724L4.07919 0H0L5.34821 7.78354L0 14H1.20855L5.88474 8.56434L9.61978 14H13.699L8.15245 5.92804H8.15275ZM6.49748 7.85211L5.95559 7.07705L1.644 0.909771H3.50026L6.97976 5.88696L7.52165 6.66202L12.0446 13.1316H10.1883L6.49748 7.85241V7.85211Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Linkedin icon" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2226_2378)">
+                                        <path
+                                            d="M2.02234 0.710938C1.05992 0.710938 0.430664 1.34291 0.430664 2.17356C0.430664 2.98586 1.04117 3.63586 1.98541 3.63586H2.00368C2.98493 3.63586 3.5956 2.98586 3.5956 2.17356C3.57725 1.34291 2.98493 0.710938 2.02234 0.710938Z"
+                                            fill="currentColor" />
+                                        <path d="M0.596924 4.7915H3.4105V13.2563H0.596924V4.7915Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M10.3165 4.59277C8.79872 4.59277 7.78094 6.01903 7.78094 6.01903V4.79144H4.96729V13.2562H7.78078V8.52915C7.78078 8.27609 7.79913 8.02343 7.87347 7.84246C8.07686 7.33714 8.53973 6.81363 9.31702 6.81363C10.3351 6.81363 10.7423 7.58988 10.7423 8.72782V13.2562H13.5557V8.40266C13.5557 5.80265 12.1675 4.59277 10.3165 4.59277Z"
+                                            fill="currentColor" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2226_2378">
+                                            <rect width="14" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Instagram icon" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2226_1494)">
+                                        <path
+                                            d="M13.9864 4.11604C13.9536 3.37216 13.8333 2.86076 13.661 2.41762C13.4832 1.94723 13.2097 1.5261 12.8514 1.17601C12.5013 0.820473 12.0774 0.544204 11.6124 0.369213C11.1667 0.196892 10.658 0.0765988 9.91413 0.0438013C9.1647 0.00822609 8.92679 0 7.02603 0C5.12526 0 4.88735 0.00822609 4.1407 0.0410236C3.39682 0.0738212 2.88542 0.194221 2.44238 0.366435C1.97189 0.544204 1.55076 0.817695 1.20067 1.17601C0.845131 1.5261 0.568969 1.95001 0.393871 2.41495C0.22155 2.86076 0.101257 3.36939 0.0684595 4.11326C0.0328843 4.86269 0.0246582 5.10061 0.0246582 7.00137C0.0246582 8.90213 0.0328843 9.14005 0.0656818 9.8867C0.0984794 10.6306 0.218879 11.142 0.3912 11.5851C0.568969 12.0555 0.845131 12.4766 1.20067 12.8267C1.55076 13.1823 1.97467 13.4585 2.4396 13.6335C2.88542 13.8058 3.39405 13.9261 4.13803 13.9589C4.88457 13.9918 5.12259 14 7.02336 14C8.92412 14 9.16203 13.9918 9.90868 13.9589C10.6526 13.9261 11.164 13.8058 11.607 13.6335C12.5479 13.2698 13.2917 12.5259 13.6555 11.5851C13.8277 11.1393 13.9481 10.6306 13.9809 9.8867C14.0137 9.14005 14.0219 8.90213 14.0219 7.00137C14.0219 5.10061 14.0192 4.86269 13.9864 4.11604ZM12.7256 9.832C12.6955 10.5157 12.5807 10.8849 12.4849 11.1311C12.2497 11.741 11.7656 12.225 11.1557 12.4603C10.9096 12.556 10.5377 12.6709 9.85666 12.7009C9.11823 12.7338 8.89677 12.7419 7.0288 12.7419C5.16084 12.7419 4.9366 12.7338 4.20084 12.7009C3.51712 12.6709 3.1479 12.556 2.90176 12.4603C2.59825 12.3481 2.32198 12.1703 2.09774 11.9379C1.86527 11.7109 1.6875 11.4374 1.57533 11.1339C1.47961 10.8877 1.36476 10.5157 1.33474 9.83478C1.30184 9.09635 1.29372 8.87478 1.29372 7.00682C1.29372 5.13885 1.30184 4.91461 1.33474 4.17896C1.36476 3.49524 1.47961 3.12602 1.57533 2.87988C1.6875 2.57626 1.86527 2.3001 2.10052 2.07575C2.32743 1.84329 2.60092 1.66552 2.90454 1.55345C3.15068 1.45773 3.52267 1.34288 4.20362 1.31276C4.94205 1.27996 5.16362 1.27173 7.03147 1.27173C8.90222 1.27173 9.12368 1.27996 9.85943 1.31276C10.5432 1.34288 10.9124 1.45773 11.1585 1.55345C11.462 1.66552 11.7383 1.84329 11.9625 2.07575C12.195 2.30277 12.3728 2.57626 12.4849 2.87988C12.5807 3.12602 12.6955 3.49791 12.7256 4.17896C12.7584 4.91739 12.7667 5.13885 12.7667 7.00682C12.7667 8.87478 12.7584 9.09357 12.7256 9.832Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M7.02585 3.40479C5.04037 3.40479 3.42944 5.0156 3.42944 7.00119C3.42944 8.98678 5.04037 10.5976 7.02585 10.5976C9.01144 10.5976 10.6223 8.98678 10.6223 7.00119C10.6223 5.0156 9.01144 3.40479 7.02585 3.40479ZM7.02585 9.33409C5.73777 9.33409 4.69295 8.28938 4.69295 7.00119C4.69295 5.71301 5.73777 4.66829 7.02585 4.66829C8.31403 4.66829 9.35875 5.71301 9.35875 7.00119C9.35875 8.28938 8.31403 9.33409 7.02585 9.33409Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M11.6043 3.26294C11.6043 3.72659 11.2284 4.10253 10.7646 4.10253C10.301 4.10253 9.92505 3.72659 9.92505 3.26294C9.92505 2.79918 10.301 2.42334 10.7646 2.42334C11.2284 2.42334 11.6043 2.79918 11.6043 3.26294Z"
+                                            fill="currentColor" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2226_1494">
+                                            <rect width="14" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Behance icon" class="social-icon">
+                                <svg width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.65015 3.96391C5.65015 3.96391 6.97486 3.86556 6.97486 2.31171C6.97486 0.758001 5.89098 0 4.5179 0H1.99065H1.91641H0V8.68245H1.91641H1.99065H4.5179C4.5179 8.68245 7.2759 8.76969 7.2759 6.11983C7.27605 6.11983 7.39632 3.96391 5.65015 3.96391ZM1.99065 1.54333H4.19275H4.51805C4.51805 1.54333 5.13225 1.54333 5.13225 2.44659C5.13225 3.34985 4.77086 3.48078 4.36139 3.48078H1.99065V1.54333ZM4.40143 7.13956H1.99065V4.81909H4.5179C4.5179 4.81909 5.43329 4.80739 5.43329 6.01155C5.43329 7.01564 4.76385 7.12948 4.40143 7.13956Z"
+                                        fill="currentColor" />
+                                    <path d="M9.08667 0.51123H12.669V1.5805H9.08667V0.51123Z" fill="currentColor" />
+                                    <path
+                                        d="M10.9544 2.20947C7.61552 2.20947 7.61844 5.54514 7.61844 5.54514C7.61844 5.54514 7.38959 8.8643 10.9546 8.8643C10.9546 8.8643 13.9256 9.03411 13.9256 6.55523H12.3976C12.3976 6.55523 12.4486 7.48917 11.0056 7.48917C11.0056 7.48917 9.47771 7.59132 9.47771 5.97814H13.9765C13.9765 5.97814 14.4687 2.20947 10.9544 2.20947ZM12.3126 4.81929H9.46047C9.46047 4.81929 9.64708 3.48099 10.9883 3.48099C12.3297 3.48084 12.3126 4.81929 12.3126 4.81929Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Dribble icon" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0C3.14562 0 0 3.1459 0 7C0 10.8544 3.1459 14 7 14C10.8544 14 14 10.8541 14 7C14 3.14562 10.8541 0 7 0ZM11.748 3.0491C12.6219 4.09746 13.1554 5.43867 13.1783 6.90156C12.0829 6.64535 10.8664 6.62813 9.62746 6.85398C9.30508 6.91277 8.9827 6.98742 8.66223 7.07711C8.55559 6.78699 8.44238 6.49934 8.32207 6.21441C8.1993 5.92375 8.06969 5.63801 7.93406 5.35637C9.41035 4.79254 11.01 3.95309 11.748 3.0491ZM7 0.820312C8.60836 0.820312 10.0748 1.43801 11.1754 2.44836C10.7461 3.03379 9.52273 3.88609 7.56 4.62109C6.87477 3.34523 6.05309 2.17273 5.10371 1.11836C5.70145 0.925039 6.33883 0.820312 7 0.820312ZM4.2916 1.44648C5.25984 2.48363 6.09273 3.64191 6.77879 4.89316C4.73676 5.55406 2.6693 5.82367 0.969336 5.64949C1.38332 3.79969 2.62883 2.26051 4.2916 1.44648ZM0.820312 7C0.820312 6.81844 0.828789 6.63879 0.844102 6.46133C1.21926 6.50098 1.61055 6.52094 2.01496 6.52094C3.60992 6.52094 5.40176 6.21414 7.16133 5.63145C7.42984 6.18105 7.67129 6.74652 7.8843 7.32594C7.19824 7.57258 6.53051 7.88621 5.90352 8.25945C4.36625 9.17465 3.2416 10.3521 2.77512 11.5054C1.57281 10.3772 0.820312 8.77488 0.820312 7ZM7 13.1797C5.67957 13.1797 4.45457 12.7632 3.44914 12.0548C3.76086 11.0015 4.81523 9.86207 6.32324 8.96437C6.85453 8.64773 7.47578 8.34941 8.15199 8.10688C8.63133 9.61352 8.925 11.2038 9.01824 12.8409C8.38551 13.0602 7.70656 13.1797 7 13.1797ZM9.81832 12.4988C9.70457 10.9041 9.40762 9.35156 8.93102 7.86023C10.2599 7.49492 11.7359 7.37242 13.1357 7.73555C12.8879 9.81394 11.605 11.5793 9.81832 12.4988Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="copyright-text flex justify-center md:justify-end lg:pr-2 xl:pr-5 2xl:pr-21 3xl:pr-18.75 fhd:pr-[6%]">
+                    <p class="font-manrope text-sm text-old-silver">
+                        &copy; Copyright 2026 MonirulSupDev,Inc Satkhira.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+        <!-- Back to Top Button -->
+        <button aria-label="Back to top" id="backToTop"
+            class="fixed bottom-6 right-6 z-40 flex size-12 translate-y-20 opacity-0 items-center justify-center rounded-full bg-[#745EFF] text-white shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-[#4a30f5]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+        </button>
+    </div>
+
+    <script src="src/js/jquery-4.0.0.min.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
+
+    <!-- Fancybox popup -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js" defer></script>
+
+    <script src="src/js/main.js" defer></script>
+</body>
+
+</html>
